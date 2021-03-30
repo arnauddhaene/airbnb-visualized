@@ -2,6 +2,10 @@
 
 Data Visualization Project for COM-480 2021 at EPFL.
 
+# Data
+
+The data is pulled from [Inside Airbnb](http://insideairbnb.com/get-the-data.html) for regions specified in [Project organization](#project-organization).
+
 ## Project organization
 
 ```
