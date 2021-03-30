@@ -103,9 +103,10 @@ dist
 # TernJS port file
 .tern-port
 
-# Data
-data/
-
 # Python related
 notebooks/.ipynb_checkpoints
+data/.ipynb_checkpoints
+data/vaud/*
+data/zurich/*
+data/geneva/*
 .DS_Store
