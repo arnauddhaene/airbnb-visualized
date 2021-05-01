@@ -2,27 +2,22 @@
 
 Data Visualization Project for COM-480 2021 at EPFL.
 
-# Data
-
-The data is pulled from [Inside Airbnb](http://insideairbnb.com/get-the-data.html) for regions specified in [Project organization](#project-organization).
-
 ## Project organization
 
 ```
 
-├── config
-|   └── index.js   
+├── assets
+|   ├── css                <- Styling
+|   ├── img                <- Images
+|   ├── js                 <- JavaScript code
+|   └── js                 <- External libraries
 ├── data
 |   ├── README.md          <- More info about data filenames
 |   ├── geneva             <- Geneva region data
 |   ├── vaud               <- Vaud region data
 |   └── zurich             <- Zurich region data
-├── notebooks              <- Python notebooks
-|   └── eda.ipnyb
-├── scripts
 ├── .gitignore
-├── index.js
-├── package.json
+├── index.html             <- Single page HTML code
 ├── README.md              <- The current file
 ```
 
