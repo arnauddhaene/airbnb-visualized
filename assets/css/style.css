@@ -481,9 +481,24 @@ section {
 #listings-map {
     margin-top: 4rem;
     height: 600px;
-    background: url("../img/listings-map.png") top right no-repeat;
-    background-size: cover;
+    background: url("../img/listings-map.jpg") top right no-repeat;
+    background-size: contain;
+    background-position: 50%;
     position: relative;
+}
+
+#guest-plot {
+    margin-top: 4rem;
+    height: 600px;
+    background: url("../img/guest-plot.jpg") top right no-repeat;
+    background-size: cover;
+}
+
+#host-plot {
+    margin-top: 4rem;
+    height: 600px;
+    background: url("../img/host-plot.jpg") top right no-repeat;
+    background-size: cover;
 }
 
 
