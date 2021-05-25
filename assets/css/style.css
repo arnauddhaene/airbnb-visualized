@@ -1259,3 +1259,17 @@ section {
 #footer .credits {
     font-size: 13px;
 }
+
+
+/*--------------------------------------------------------------
+  D3.js chart elements
+--------------------------------------------------------------*/
+
+path {
+    stroke: rgb(101, 99, 99);
+}
+
+#legend {
+    display: block;
+    margin: auto;
+}

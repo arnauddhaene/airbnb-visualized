@@ -27,12 +27,6 @@
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
 
-    <!-- =======================================================
-  * Template Name: MyResume - v2.2.1
-  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
@@ -281,7 +275,27 @@
                         quidem hic quas.</p>
                 </div>
 
-                <div id="guest-plot" class="container"></div>
+                <!-- <div id="guest-plot" class="container"></div> -->
+
+                <div class="container d-flex flex-row mt-3">
+
+                    <div class="col-4">
+                        <select id="selectFeatureButton1"></select>
+                        <svg id="plot1"></svg>
+                        <svg id="legend1"></svg>
+                    </div>
+
+                    <div class="col-4">
+                        <select id="selectFeatureButton2"></select>
+                        <svg id="plot2"></svg>
+                        <svg id="legend2"></svg>
+                    </div>
+
+                    <div class="col-4">
+                        <svg id="plot3"></svg>
+                    </div>
+
+                </div>
 
                 <!-- <div class="row">
                     <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
@@ -703,8 +717,13 @@
     <script src="assets/vendor/typed.js/typed.min.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
 
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+    <script src="https://d3js.org/d3-queue.v3.min.js"></script>
+
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/chart2.js"></script>
 
 </body>
 
