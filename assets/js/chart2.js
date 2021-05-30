@@ -1,9 +1,4 @@
 // *******************//
-//    IMPORTS         //
-// *******************//
-// import _ from 'lodash.js';
-
-// *******************//
 // whenDocumentLoaded //
 // *******************//
 function whenDocumentLoaded(action) {
@@ -26,7 +21,7 @@ class ScatterPlot {
 
         this.listings = listings, this.featureX = featureX, this.featureY = featureY;
 
-        this.margin = { top: 50, right: 30, bottom: 50, left: 30 };
+        this.margin = { top: 60, right: 30, bottom: 45, left: 50 };
 
         this.width = width - this.margin.left - this.margin.right;
         this.height = height - this.margin.top - this.margin.bottom;
@@ -43,20 +38,22 @@ class ScatterPlot {
     show() {
 
         // Prepare canvas
-        this.svg.append("g")
+        this.svg
+            .classed('svg-container', true)
+            .append("g")
             .attr("transform", "translate(" + this.margin.left + "," + this.margin.top + ")");
 
-        this.addAxes()
+        this.addAxes('Price ($)', 'Bedrooms')
 
         this.addPoints(this.featureX, this.featureY)
 
     }
 
-    addAxes() {
+    addAxes(xlabel, ylabel) {
 
         var tempListings = this.listings
-            .filter(l => (l[this.featureX] != NaN) && (l[this.featureX] != 0.0))
-            .filter(l => (l[this.featureY] != NaN) && (l[this.featureY] != 0.0));
+            .filter(l => l[this.featureX] != NaN)
+            .filter(l => l[this.featureY] != NaN);
 
         var minToMaxX = [d3.min(tempListings, l => +l[this.featureX]), d3.max(tempListings, l => +l[this.featureX])]
         var minToMaxY = [d3.min(tempListings, l => +l[this.featureY]), d3.max(tempListings, l => +l[this.featureY])]
@@ -71,6 +68,13 @@ class ScatterPlot {
             .attr("transform", "translate(0," + this.height + ")")
             .call(d3.axisBottom(this.x));
 
+        // Add x Axis
+        this.svg.append("text")
+            .attr('id', 'xAxisLabel')
+            .attr("transform", `translate(${this.width / 2}, ${this.height + this.margin.top / 1.5})`)
+            .style("text-anchor", "middle")
+            .text(xlabel)
+
         // Add Y axis
         this.y = d3.scaleLinear()
             .domain(minToMaxY)
@@ -79,6 +83,16 @@ class ScatterPlot {
         this.svg.append("g")
             .attr('id', 'yAxis')
             .call(d3.axisLeft(this.y));
+
+        // Add y Axis
+        this.svg.append("text")
+            .attr('id', 'yAxisLabel')
+            .attr("transform", "rotate(-90)")
+            .attr("y", 0 - this.margin.left)
+            .attr("x", 0 - (this.height / 2))
+            .attr("dy", "1em")
+            .style("text-anchor", "middle")
+            .text(ylabel);
     }
 
     addPoints(featureX, featureY) {
@@ -98,16 +112,23 @@ class ScatterPlot {
 
     update() {
 
-        this.featureX = document.getElementById(this.button1Id).value;
-        this.featureY = document.getElementById(this.button2Id).value;
+        var button1 = document.getElementById(this.button1Id);
+        var button2 = document.getElementById(this.button2Id);
+
+        this.featureX = button1.value;
+        this.featureY = button2.value;
 
         this.svg.select('#xAxis')
+            .remove()
+        this.svg.select('#xAxisLabel')
             .remove()
 
         this.svg.select('#yAxis')
             .remove()
+        this.svg.select('#yAxisLabel')
+            .remove()
 
-        this.addAxes()
+        this.addAxes(button1.options[button1.selectedIndex].text, button2.options[button2.selectedIndex].text)
 
         this.svg.select('#chart')
             .remove()
@@ -135,6 +156,7 @@ class ChoroPlot {
         this.updateFeature(feature);
 
         this.svg = d3.select("#" + this.id)
+            .classed('svg-content-responsive', true)
             .attr("preserveAspectRatio", "xMinYMin meet")
             .attr("viewBox", "0 0 " + width + " " + height)
 
@@ -199,7 +221,7 @@ class ChoroPlot {
     show() {
 
         // var projection = d3.geoEquirectangular();
-        var projection = d3.geoMercator().translate([-500, -125]).scale(20000).center([4.53, 47.3]);
+        var projection = d3.geoMercator().translate([-500, -160]).scale(20000).center([4.53, 47.3]);
 
         var path = d3.geoPath().projection(projection);
 
@@ -435,13 +457,13 @@ class ChoroPlot {
 whenDocumentLoaded(() => {
 
     var geoJsonPath =
-        'https://raw.githubusercontent.com/arnauddhaene/airbnb-visualized/main/data/vaud/neighbourhoods.geojson';
+        'https://raw.githubusercontent.com/arnauddhaene/airbnb-visualized/main/data/neighbourhoods-combined.geojson';
 
     var infoPath =
-        'https://raw.githubusercontent.com/arnauddhaene/airbnb-visualized/main/data/vaud/listings-filtered.csv';
+        'https://raw.githubusercontent.com/arnauddhaene/airbnb-visualized/main/data/listings-filtered.csv';
 
-    var geojson = d3.json(geoJsonPath)
-    var data = d3.csv(infoPath)
+    var geojson = d3.json(geoJsonPath);
+    var data = d3.csv(infoPath);
 
     Promise.all([geojson, data]).then(response => {
 
@@ -451,6 +473,12 @@ whenDocumentLoaded(() => {
         var features = {
             'price': 'Price ($)',
             'review_scores_value': 'Average Review Score / 10',
+            'beds': 'Beds',
+            'accommodates': 'Accomodation (persons)',
+            'amenities_count': 'Amenities (per listing)',
+            'maximum_nights': 'Maximum stay (nights)',
+            'minimum_nights': 'Minimum stay (nights)',
+            'host_acceptance_rate': 'Host acceptance rate (%)',
             'bedrooms': 'Bedrooms'
         };
 

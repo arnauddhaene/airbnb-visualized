@@ -113,3 +113,5 @@ data/vaud/*
 data/zurich/*
 data/geneva/*
 .DS_Store
+
+.vscode/

@@ -1273,3 +1273,10 @@ path {
     display: block;
     margin: auto;
 }
+
+.svg-container {
+    width: 100%;
+    vertical-align: top;
+    overflow: hidden;
+    display: inline-block;
+}
