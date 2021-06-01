@@ -718,7 +718,7 @@ whenDocumentLoaded_(() => {
 		var data_vaud = [data_vaud_june, data_vaud_july, data_vaud_august, 
 						data_vaud_september, data_vaud_october, data_vaud_november,data_vaud_december ];
 		var features = {
-            'price': 'Price ($)',
+            'price': 'Price ($/night)',
             'minimum_nights': 'Minimum number of nights',
 			'maximum_nights':'Maximum number of nights',
             'number_of_reviews': 'Number of reviews'
