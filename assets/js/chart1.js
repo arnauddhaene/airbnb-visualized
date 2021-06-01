@@ -21,7 +21,7 @@ function whenDocumentLoaded_(action) {
 // *******************//
 class MapPlot{
 
-    constructor(id, legendId, geojson1, geojson2, geojson3, cities, data_vaud, data_geneva, data_zurich, features, places, times, place = 'Vaud', feature = 'price', time = 'June',  width = 350, height = 300) {
+    constructor(id, legendId, geojson1, geojson2, geojson3, cities, data_vaud, data_geneva, data_zurich, features, places, times, place = 'Vaud', feature = 'price', time = 'June',  width = 400, height = 300) {
 
         this.id = id;
         
@@ -325,7 +325,7 @@ class MapPlot{
 
     show() {
         if (this.place == 'Vaud') {
-            var projection = d3.geoMercator().translate([-350, -100]).scale(14000).center([4.53, 47.3]);
+            var projection = d3.geoMercator().translate([-300, -100]).scale(13000).center([4.53, 47.3]);
             var path = d3.geoPath().projection(projection);
         }
         
