@@ -1,0 +1,265 @@
+source,target,value
+place_0-100,Heating,1196
+place_0-100,Essentials,1195
+place_0-100,TV,850
+place_0-100,Stove,566
+place_0-100,Nespresso machine,59
+place_0-100,Cleaning before checkout,97
+place_0-100,Ethernet connection,64
+place_0-100,Smoke alarm,303
+place_0-100,Pack ’n Play/travel crib,75
+place_0-100,Room-darkening shades,96
+place_0-100,Garden or backyard,177
+place_0-100,Lockbox,175
+place_0-100,Dryer,569
+place_0-100,Oven,503
+place_0-100,Coffee maker,517
+place_0-100,Shampoo,708
+place_0-100,Hangers,960
+place_0-100,First aid kit,165
+place_0-100,Hair dryer,847
+place_0-100,Dishes and silverware,700
+place_0-100,Kitchen,1188
+place_0-100,Dishwasher,283
+place_0-100,Cooking basics,643
+place_0-100,Microwave,435
+place_0-100,High chair,82
+place_0-100,Patio or balcony,329
+place_0-100,Single level home,138
+place_0-100,Dedicated workspace,721
+place_0-100,Wifi,1102
+place_0-100,Free parking on premises,576
+place_0-100,Pocket wifi,84
+place_0-100,Shower gel,116
+place_0-100,Crib,69
+place_0-100,Private entrance,437
+place_0-100,Extra pillows and blankets,241
+place_0-100,Luggage dropoff allowed,277
+place_0-100,Refrigerator,647
+place_0-100,Carbon monoxide alarm,95
+place_0-100,Long term stays allowed,1061
+place_0-100,Hot water,827
+place_0-100,Bed linens,522
+place_0-100,Bathtub,112
+place_0-100,Iron,849
+place_0-100,Children’s books and toys,84
+place_0-100,Freezer,53
+place_0-100,BBQ grill,60
+place_0-100,Free street parking,236
+place_0-100,Fire extinguisher,343
+place_0-100,Washer,751
+place_100-200,Heating,915
+place_100-200,Essentials,899
+place_100-200,TV,766
+place_100-200,Stove,472
+place_100-200,Nespresso machine,73
+place_100-200,Children’s dinnerware,79
+place_100-200,Cleaning before checkout,61
+place_100-200,Ethernet connection,59
+place_100-200,Smoke alarm,270
+place_100-200,Pack ’n Play/travel crib,119
+place_100-200,Room-darkening shades,143
+place_100-200,Garden or backyard,241
+place_100-200,Lockbox,171
+place_100-200,Dryer,560
+place_100-200,Oven,486
+place_100-200,Coffee maker,472
+place_100-200,Shampoo,507
+place_100-200,Hangers,780
+place_100-200,First aid kit,193
+place_100-200,Hair dryer,743
+place_100-200,Dishes and silverware,564
+place_100-200,Kitchen,941
+place_100-200,Dishwasher,412
+place_100-200,Cooking basics,527
+place_100-200,Microwave,360
+place_100-200,High chair,153
+place_100-200,Patio or balcony,365
+place_100-200,Single level home,99
+place_100-200,Dedicated workspace,565
+place_100-200,Wifi,879
+place_100-200,Free parking on premises,611
+place_100-200,Pocket wifi,57
+place_100-200,Shower gel,119
+place_100-200,Crib,131
+place_100-200,Private entrance,420
+place_100-200,Extra pillows and blankets,276
+place_100-200,Luggage dropoff allowed,212
+place_100-200,Refrigerator,538
+place_100-200,Carbon monoxide alarm,132
+place_100-200,Long term stays allowed,834
+place_100-200,Hot water,662
+place_100-200,Bed linens,437
+place_100-200,Bathtub,184
+place_100-200,Iron,658
+place_100-200,Children’s books and toys,167
+place_100-200,Freezer,87
+place_100-200,BBQ grill,113
+place_100-200,Free street parking,228
+place_100-200,Fire extinguisher,394
+place_100-200,Washer,713
+place_200-300,Heating,300
+place_200-300,Essentials,305
+place_200-300,TV,271
+place_200-300,Stove,152
+place_200-300,Smoke alarm,94
+place_200-300,Garden or backyard,104
+place_200-300,Lockbox,56
+place_200-300,Dryer,217
+place_200-300,Oven,163
+place_200-300,Coffee maker,173
+place_200-300,Shampoo,144
+place_200-300,Hangers,286
+place_200-300,First aid kit,73
+place_200-300,Hair dryer,243
+place_200-300,Dishes and silverware,197
+place_200-300,Kitchen,317
+place_200-300,Dishwasher,162
+place_200-300,Cooking basics,184
+place_200-300,Microwave,123
+place_200-300,High chair,55
+place_200-300,Patio or balcony,150
+place_200-300,Dedicated workspace,178
+place_200-300,Wifi,286
+place_200-300,Free parking on premises,263
+place_200-300,Crib,56
+place_200-300,Private entrance,166
+place_200-300,Extra pillows and blankets,104
+place_200-300,Luggage dropoff allowed,51
+place_200-300,Refrigerator,187
+place_200-300,Long term stays allowed,285
+place_200-300,Hot water,229
+place_200-300,Bed linens,154
+place_200-300,Bathtub,77
+place_200-300,Iron,219
+place_200-300,Children’s books and toys,75
+place_200-300,BBQ grill,54
+place_200-300,Free street parking,76
+place_200-300,Fire extinguisher,143
+place_200-300,Washer,267
+place_300-400,Heating,107
+place_300-400,Essentials,104
+place_300-400,TV,98
+place_300-400,Stove,54
+place_300-400,Dryer,89
+place_300-400,Oven,66
+place_300-400,Coffee maker,64
+place_300-400,Shampoo,59
+place_300-400,Hangers,96
+place_300-400,Hair dryer,90
+place_300-400,Dishes and silverware,73
+place_300-400,Kitchen,109
+place_300-400,Dishwasher,59
+place_300-400,Cooking basics,66
+place_300-400,Patio or balcony,55
+place_300-400,Dedicated workspace,65
+place_300-400,Wifi,98
+place_300-400,Free parking on premises,103
+place_300-400,Private entrance,57
+place_300-400,Refrigerator,68
+place_300-400,Long term stays allowed,101
+place_300-400,Hot water,79
+place_300-400,Bed linens,58
+place_300-400,Iron,83
+place_300-400,Fire extinguisher,51
+place_300-400,Washer,98
+place_400-500,Heating,75
+place_400-500,Essentials,73
+place_400-500,TV,68
+place_400-500,Dryer,60
+place_400-500,Hangers,68
+place_400-500,Hair dryer,56
+place_400-500,Kitchen,75
+place_400-500,Wifi,72
+place_400-500,Free parking on premises,73
+place_400-500,Long term stays allowed,68
+place_400-500,Iron,59
+place_400-500,Washer,68
+Heating,room_0-100,1098
+Essentials,room_0-100,1107
+TV,room_0-100,529
+Stove,room_0-100,333
+Nespresso machine,room_0-100,33
+Children’s dinnerware,room_0-100,39
+Cleaning before checkout,room_0-100,51
+Ethernet connection,room_0-100,53
+Smoke alarm,room_0-100,245
+Pack ’n Play/travel crib,room_0-100,44
+Room-darkening shades,room_0-100,69
+Garden or backyard,room_0-100,243
+Barbecue utensils,room_0-100,30
+Lockbox,room_0-100,67
+Dryer,room_0-100,608
+Oven,room_0-100,332
+Coffee maker,room_0-100,372
+Shampoo,room_0-100,622
+Hangers,room_0-100,891
+First aid kit,room_0-100,293
+Hair dryer,room_0-100,803
+Dishes and silverware,room_0-100,461
+Kitchen,room_0-100,923
+Dishwasher,room_0-100,282
+Cooking basics,room_0-100,384
+Microwave,room_0-100,317
+High chair,room_0-100,61
+Patio or balcony,room_0-100,288
+Single level home,room_0-100,55
+Dedicated workspace,room_0-100,735
+Wifi,room_0-100,1104
+Free parking on premises,room_0-100,513
+Pocket wifi,room_0-100,77
+Shower gel,room_0-100,110
+Crib,room_0-100,57
+Private entrance,room_0-100,174
+Extra pillows and blankets,room_0-100,286
+Luggage dropoff allowed,room_0-100,281
+Refrigerator,room_0-100,442
+Carbon monoxide alarm,room_0-100,104
+Long term stays allowed,room_0-100,916
+Hot water,room_0-100,746
+Bed linens,room_0-100,404
+Bathtub,room_0-100,95
+Body soap,room_0-100,29
+Iron,room_0-100,724
+Children’s books and toys,room_0-100,82
+Freezer,room_0-100,46
+BBQ grill,room_0-100,93
+Free street parking,room_0-100,278
+Fire extinguisher,room_0-100,369
+Washer,room_0-100,793
+Hot tub,room_0-100,41
+Heating,room_100-200,157
+Essentials,room_100-200,164
+TV,room_100-200,112
+Stove,room_100-200,31
+Smoke alarm,room_100-200,75
+Garden or backyard,room_100-200,32
+Dryer,room_100-200,75
+Coffee maker,room_100-200,44
+Shampoo,room_100-200,129
+Hangers,room_100-200,127
+First aid kit,room_100-200,54
+Hair dryer,room_100-200,136
+Dishes and silverware,room_100-200,42
+Kitchen,room_100-200,87
+Cooking basics,room_100-200,33
+Microwave,room_100-200,26
+Patio or balcony,room_100-200,30
+Dedicated workspace,room_100-200,96
+Wifi,room_100-200,167
+Free parking on premises,room_100-200,97
+Private entrance,room_100-200,35
+Extra pillows and blankets,room_100-200,33
+Luggage dropoff allowed,room_100-200,45
+Refrigerator,room_100-200,38
+Long term stays allowed,room_100-200,142
+Hot water,room_100-200,78
+Bed linens,room_100-200,46
+Iron,room_100-200,104
+Fire extinguisher,room_100-200,88
+Washer,room_100-200,85
+Heating,room_200-300,28
+Essentials,room_200-300,31
+Hair dryer,room_200-300,26
+Wifi,room_200-300,33
+Long term stays allowed,room_200-300,26
