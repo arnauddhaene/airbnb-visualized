@@ -117,7 +117,7 @@ makeGraph(){
 
   var color = d3.scaleOrdinal(d3.schemeCategory10);
 
-  var formatNumber = d3.format(",.0f"), // zero decimal places
+  var formatNumber = d3.format(",.2f"), // zero decimal places
       format = function(d) { return formatNumber(d); };
 
   var graph = this.sankey(this.sankeydata);

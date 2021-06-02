@@ -1,0 +1,154 @@
+source,target,value
+place:$0-100,Fire extinguisher,0.16464471403812825
+place:$0-100,Free street parking,0.19584055459272098
+place:$0-100,Bathtub,0.10745233968804159
+place:$0-100,Private entrance,0.28422876949740034
+place:$0-100,Shower gel,0.16984402079722705
+place:$0-100,Free parking on premises,0.1369150779896014
+place:$0-100,Wifi,0.902946273830156
+place:$0-100,Dedicated workspace,0.6776429809358753
+place:$0-100,Patio or balcony,0.1923743500866551
+place:$0-100,Cooking basics,0.5736568457538995
+place:$0-100,Microwave,0.3466204506065858
+place:$0-100,Dishes and silverware,0.5788561525129983
+place:$0-100,First aid kit,0.15077989601386482
+place:$0-100,Shampoo,0.5788561525129983
+place:$0-100,Smoke alarm,0.22530329289428075
+place:$0-100,Heating,0.9549393414211439
+place:$0-100,TV,0.6707105719237435
+place:$100-200,Fire extinguisher,0.15213675213675212
+place:$100-200,Free street parking,0.1606837606837607
+place:$100-200,Bathtub,0.13846153846153847
+place:$100-200,Private entrance,0.30085470085470084
+place:$100-200,Shower gel,0.1094017094017094
+place:$100-200,Free parking on premises,0.1829059829059829
+place:$100-200,Wifi,0.9709401709401709
+place:$100-200,Dedicated workspace,0.7555555555555555
+place:$100-200,Patio or balcony,0.20170940170940171
+place:$100-200,Cooking basics,0.6512820512820513
+place:$100-200,Microwave,0.3487179487179487
+place:$100-200,Dishes and silverware,0.5504273504273505
+place:$100-200,First aid kit,0.14017094017094017
+place:$100-200,Shampoo,0.5538461538461539
+place:$100-200,Smoke alarm,0.2512820512820513
+place:$100-200,Heating,0.976068376068376
+place:$100-200,TV,0.8256410256410256
+place:$200-300,Fire extinguisher,0.23469387755102042
+place:$200-300,Free street parking,0.21428571428571427
+place:$200-300,Bathtub,0.24489795918367346
+place:$200-300,Private entrance,0.3877551020408163
+place:$200-300,Shower gel,0.19387755102040816
+place:$200-300,Free parking on premises,0.40816326530612246
+place:$200-300,Wifi,0.9795918367346939
+place:$200-300,Dedicated workspace,0.7551020408163265
+place:$200-300,Patio or balcony,0.3469387755102041
+place:$200-300,Cooking basics,0.6020408163265306
+place:$200-300,Microwave,0.40816326530612246
+place:$200-300,Dishes and silverware,0.5816326530612245
+place:$200-300,First aid kit,0.24489795918367346
+place:$200-300,Shampoo,0.7040816326530612
+place:$200-300,Garden or backyard,0.14285714285714285
+place:$200-300,Smoke alarm,0.336734693877551
+place:$200-300,Heating,0.9591836734693877
+place:$200-300,TV,0.8877551020408163
+place:$300-400,Hot tub,0.14705882352941177
+place:$300-400,Fire extinguisher,0.2647058823529412
+place:$300-400,Free street parking,0.14705882352941177
+place:$300-400,Bathtub,0.23529411764705882
+place:$300-400,Private entrance,0.23529411764705882
+place:$300-400,Shower gel,0.11764705882352941
+place:$300-400,Free parking on premises,0.3235294117647059
+place:$300-400,Wifi,1.0
+place:$300-400,Dedicated workspace,0.7941176470588235
+place:$300-400,Patio or balcony,0.17647058823529413
+place:$300-400,Cooking basics,0.5294117647058824
+place:$300-400,Microwave,0.3235294117647059
+place:$300-400,Dishes and silverware,0.47058823529411764
+place:$300-400,First aid kit,0.2647058823529412
+place:$300-400,Shampoo,0.8529411764705882
+place:$300-400,Garden or backyard,0.11764705882352941
+place:$300-400,Smoke alarm,0.38235294117647056
+place:$300-400,Heating,0.9117647058823529
+place:$300-400,TV,0.9117647058823529
+place:$400-500,Fire extinguisher,0.1875
+place:$400-500,Free street parking,0.125
+place:$400-500,Bathtub,0.25
+place:$400-500,Private entrance,0.4375
+place:$400-500,Shower gel,0.1875
+place:$400-500,Free parking on premises,0.5
+place:$400-500,Wifi,1.0
+place:$400-500,Dedicated workspace,0.6875
+place:$400-500,Patio or balcony,0.25
+place:$400-500,Cooking basics,0.375
+place:$400-500,Microwave,0.4375
+place:$400-500,Dishes and silverware,0.5625
+place:$400-500,First aid kit,0.25
+place:$400-500,Shampoo,0.6875
+place:$400-500,Smoke alarm,0.4375
+place:$400-500,Heating,1.0
+place:$400-500,TV,1.0
+Fire extinguisher,room:$0-100,0.24019607843137256
+Free street parking,room:$0-100,0.1830065359477124
+Bathtub,room:$0-100,0.11601307189542484
+Free parking on premises,room:$0-100,0.2222222222222222
+Wifi,room:$0-100,0.954248366013072
+Dedicated workspace,room:$0-100,0.6601307189542484
+Patio or balcony,room:$0-100,0.1895424836601307
+Cooking basics,room:$0-100,0.43790849673202614
+Microwave,room:$0-100,0.315359477124183
+Dishes and silverware,room:$0-100,0.39705882352941174
+First aid kit,room:$0-100,0.3088235294117647
+Shampoo,room:$0-100,0.5915032679738562
+Smoke alarm,room:$0-100,0.24836601307189543
+Heating,room:$0-100,0.9313725490196079
+TV,room:$0-100,0.5196078431372549
+Fire extinguisher,room:$100-200,0.49411764705882355
+Free street parking,room:$100-200,0.17647058823529413
+Shower gel,room:$100-200,0.21176470588235294
+Free parking on premises,room:$100-200,0.2
+Wifi,room:$100-200,0.9882352941176471
+Dedicated workspace,room:$100-200,0.7647058823529411
+Cooking basics,room:$100-200,0.21176470588235294
+Microwave,room:$100-200,0.16470588235294117
+Dishes and silverware,room:$100-200,0.36470588235294116
+First aid kit,room:$100-200,0.38823529411764707
+Shampoo,room:$100-200,0.788235294117647
+Smoke alarm,room:$100-200,0.47058823529411764
+Heating,room:$100-200,0.9882352941176471
+TV,room:$100-200,0.6823529411764706
+Fire extinguisher,room:$200-300,0.6363636363636364
+Private entrance,room:$200-300,0.45454545454545453
+Free parking on premises,room:$200-300,0.18181818181818182
+Wifi,room:$200-300,0.9090909090909091
+Dedicated workspace,room:$200-300,0.6363636363636364
+Microwave,room:$200-300,0.18181818181818182
+Dishes and silverware,room:$200-300,0.18181818181818182
+First aid kit,room:$200-300,0.5454545454545454
+Shampoo,room:$200-300,0.6363636363636364
+Smoke alarm,room:$200-300,0.8181818181818182
+Heating,room:$200-300,0.9090909090909091
+TV,room:$200-300,0.9090909090909091
+Fire extinguisher,room:$300-400,0.5
+Free street parking,room:$300-400,0.5
+Bathtub,room:$300-400,0.5
+Private entrance,room:$300-400,0.5
+Shower gel,room:$300-400,0.5
+Free parking on premises,room:$300-400,0.5
+Wifi,room:$300-400,1.0
+Dedicated workspace,room:$300-400,1.0
+Patio or balcony,room:$300-400,0.5
+Cooking basics,room:$300-400,0.5
+Microwave,room:$300-400,0.5
+Dishes and silverware,room:$300-400,0.5
+First aid kit,room:$300-400,0.5
+Shampoo,room:$300-400,1.0
+Heating,room:$300-400,0.5
+TV,room:$300-400,0.5
+Mini fridge,room:$300-400,0.5
+Hot tub,room:$400-500,0.5
+Fire extinguisher,room:$400-500,0.5
+Free parking on premises,room:$400-500,0.5
+Wifi,room:$400-500,0.5
+First aid kit,room:$400-500,1.0
+Shampoo,room:$400-500,1.0
+Heating,room:$400-500,1.0
