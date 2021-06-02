@@ -15,7 +15,7 @@ function whenDocumentLoaded__(action) {
 // *******************//
 
 class SankeyPlot{
-  constructor(id, amenities1, amenities2, button1Id, width = 1000, height = 550, place="Vaud"){
+  constructor(id, amenities1, amenities2, amenities3, button1Id, width = 1000, height = 550, place="Vaud"){
 
     this.id = id;
 
@@ -25,7 +25,7 @@ class SankeyPlot{
             this.amenities = amenities1;
             break;
         case 'Zurich':
-            //to do
+            this.amenities = amenities3
             break;
         case 'Geneva':
             this.amenities = amenities2;
@@ -37,7 +37,7 @@ class SankeyPlot{
     //keep the different amenitites
     this.vd_links = amenities1;
     this.gv_links = amenities2;
-    //this.zh_links = amenities3;
+    this.zh_links = amenities3;
 
     this.button1Id = button1Id;
 
@@ -185,7 +185,7 @@ update_place_(place){
           this.amenities = this.vd_links;
           break;
       case 'Zurich':
-          //this.amenities = this.zh_links;
+          this.amenities = this.zh_links;
           break;
       case 'Geneva':
           this.amenities = this.gv_links;
@@ -208,16 +208,19 @@ whenDocumentLoaded__(() => {
 
     var infoPath_vd = 'https://raw.githubusercontent.com/arnauddhaene/airbnb-visualized/charlyne/data/vd_total.csv';
     var infoPath_gv = 'https://raw.githubusercontent.com/arnauddhaene/airbnb-visualized/charlyne/data/gv_total.csv';
+    var infoPath_zh = 'https://raw.githubusercontent.com/arnauddhaene/airbnb-visualized/charlyne/data/zh_total.csv';
 
     var data1 = d3.csv(infoPath_vd);
     var data2 = d3.csv(infoPath_gv);
+    var data3 = d3.csv(infoPath_zh);
 
-    Promise.all([data1, data2]).then(response => {
+    Promise.all([data1, data2,data3]).then(response => {
 
         var links_vd = response[0];
         var links_gv = response[1];
+        var links_zh = response[2];
 
-        chart = new SankeyPlot('plot5', links_vd,links_gv, 'selectPlaceButton5');
+        chart = new SankeyPlot('plot5', links_vd,links_gv, links_zh, 'selectPlaceButton5');
 
 
         chart.show();
