@@ -15,11 +15,32 @@ function whenDocumentLoaded__(action) {
 // *******************//
 
 class SankeyPlot{
-  constructor(id, amenities, button1Id, width = 1000, height = 450){
+  constructor(id, amenities1, amenities2, button1Id, width = 1000, height = 450, place="Vaud"){
+
+    this.id = id;
+
+    // Initialisation:
+    switch (place) {
+        case 'Vaud':
+            this.amenities = amenities1;
+            break;
+        case 'Zurich':
+            //to do
+            break;
+        case 'Geneva':
+            this.amenities = amenities2;
+            break;
+        default:
+            break;
+    }
+
+    //keep the different amenitites
+    this.vd_links = amenities1;
+    this.gv_links = amenities2;
+    //this.zh_links = amenities3;
 
     this.button1Id = button1Id;
 
-    this.amenities = amenities;
 
     this.margin = {top: 10, right: 10, bottom: 10, left: 10};
     this.width = width - this.margin.left - this.margin.right;
@@ -50,19 +71,17 @@ class SankeyPlot{
 
 }
 
-show() {}
-
 
 fillSankeyData() {
 
   this.amenities.forEach(d => {
-    //console.log(d)
     this.sankeydata.nodes.push({ "name": d.source });
     this.sankeydata.nodes.push({ "name": d.target });
     this.sankeydata.links.push({ "source": d.source,
                        "target": d.target,
                        "value": +d.value });
    });
+
 }
 
 makeUniqueNodes() {
@@ -92,6 +111,7 @@ makeNodesObject(){
   });
 
 }
+
 
 makeGraph(){
 
@@ -148,6 +168,37 @@ makeGraph(){
 
 }
 
+show() {
+  this.fillSankeyData()
+  this.makeUniqueNodes()
+
+  this.replaceLinkText()
+  this.makeNodesObject()
+  this.makeGraph()
+
+}
+
+update_place_(place){
+
+  switch (place) {
+      case 'Vaud':
+          this.amenities = this.vd_links;
+          break;
+      case 'Zurich':
+          //this.amenities = this.zh_links;
+          break;
+      case 'Geneva':
+          this.amenities = this.gv_links;
+          break;
+      default:
+          break;
+  }
+  this.svg.selectAll("*").remove();
+  this.sankeydata = {"nodes" : [], "links" : []};
+  this.show();
+
+}
+
 
 
 
@@ -158,25 +209,18 @@ whenDocumentLoaded__(() => {
     var infoPath_vd = 'https://raw.githubusercontent.com/arnauddhaene/airbnb-visualized/charlyne/data/vd_total.csv';
     var infoPath_gv = 'https://raw.githubusercontent.com/arnauddhaene/airbnb-visualized/charlyne/data/gv_total.csv';
 
-    var data = d3.csv(infoPath);
+    var data1 = d3.csv(infoPath_vd);
+    var data2 = d3.csv(infoPath_gv);
 
-    Promise.all([data]).then(response => {
+    Promise.all([data1, data2]).then(response => {
 
-        var links = response[0];
+        var links_vd = response[0];
+        var links_gv = response[1];
 
-        chart = new SankeyPlot('plot5', links, 'selectPlaceButton5');
-
-        chart.fillSankeyData()
-        chart.makeUniqueNodes()
-
+        chart = new SankeyPlot('plot5', links_vd,links_gv, 'selectPlaceButton5');
 
 
-        chart.replaceLinkText()
-        chart.makeNodesObject()
-        //console.log(this.sankey.nodes())
-        chart.makeGraph()
-
-        //chart.show();
+        chart.show();
 
         var button10Id = 'selectPlaceButton5';
 
@@ -186,10 +230,32 @@ whenDocumentLoaded__(() => {
             'Zurich':'Zurich'
         };
 
-        initSelector(`#${button10Id}`, features, chart1, scatter);
+        initSelectorPlace__(`#${button10Id}`, places, chart);
         //initSelector(`#${button2Id}`, features, chart2, scatter, reverse = true);
 
     }).catch(error => console.log(error));
 
 
 });
+
+function initSelectorPlace__(id, places, chart, reverse = false) {
+    var featureKeys = reverse ? Object.keys(places).reverse() : Object.keys(places);
+    // add the options to the button
+    d3.select(id)
+    .selectAll('myOptions')
+    .data(featureKeys)
+    .enter()
+    .append('option')
+    .text(d => places[d]) // text showed in the menu
+    .attr("value", d => d) // corresponding value returned by the button
+
+    // When the button is changed, run the updateChart function
+    d3.select(id).on("change", function(d) {
+        // recover the option that has been chosen
+        var selectedOption = d3.select(this).property("value")
+
+
+        // run the updateChart function with this selected option
+        chart.update_place_(selectedOption);
+    });
+}
