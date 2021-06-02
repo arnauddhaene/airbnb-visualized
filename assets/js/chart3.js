@@ -25,26 +25,48 @@ class SankeyPlot{
     this.width = width - this.margin.left - this.margin.right;
     this.height = height - this.margin.top - this.margin.bottom;
 
-    this.svg = d3.select("body").append("svg")
-        .attr("width", this.width)
-        .attr("height", this.height)
-      .append("g")
+    this.svg = d3.select("#" + id)
+        .attr("width", this.width + this.margin.left + this.margin.right)
+        .attr("height", this.height + this.margin.top + this.margin.bottom)
+        .append("g")
         .attr("transform",
-              "translate(" + this.margin.left + "," + this.margin.top + ")");
+            "translate(" + this.margin.left + "," + this.margin.top + ")");
 
     // Set the sankey diagram properties
     this.sankey = d3.sankey()
         .nodeWidth(10)
         .nodePadding(14)
         .nodeAlign(d3.sankeyCenter)
-        .size([width, height]);
+        .size([this.width, this.height]);
 
     this.path = this.sankey.links();
+
+    this.sankeydata = {"nodes" : [], "links" : []}; //data for sankey format
+
+    console.log('i get here')
 
 
 }
 
 show() {}
+
+makeSankey() {}
+
+fillSankeyData() {
+
+  this.amenities.forEach(function (d) {
+    console.log(d.source)
+    this.sankeydata.nodes.push({ "name": d.source });
+    this.sankeydata.nodes.push({ "name": d.target });
+    this.sankeydata.links.push({ "source": d.source,
+                       "target": d.target,
+                       "value": +d.value });
+   });
+
+   console.log(this.sankeydata.length)
+
+
+}
 
 }
 
@@ -58,7 +80,9 @@ whenDocumentLoaded(() => {
 
         var links = response[0];
 
-        const chart = new SankeyPlot('plot5', infoPath, 'selectPlaceButton5');
+        chart = new SankeyPlot('plot5', links, 'selectPlaceButton5');
+
+        chart.fillSankeyData()
 
         //chart.show();
 
