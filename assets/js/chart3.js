@@ -15,7 +15,7 @@ function whenDocumentLoaded__(action) {
 // *******************//
 
 class SankeyPlot{
-  constructor(id, amenities1, amenities2, button1Id, width = 1000, height = 450, place="Vaud"){
+  constructor(id, amenities1, amenities2, button1Id, width = 1000, height = 550, place="Vaud"){
 
     this.id = id;
 

@@ -1,215 +1,801 @@
 source,target,value
-place_0-100,Heating,551
-place_0-100,Essentials,561
-place_0-100,TV,387
-place_0-100,Stove,268
-place_0-100,Nespresso machine,35
-place_0-100,Cleaning before checkout,44
-place_0-100,Ethernet connection,46
-place_0-100,Smoke alarm,130
-place_0-100,Room-darkening shades,54
-place_0-100,Garden or backyard,43
-place_0-100,Lockbox,67
-place_0-100,Dryer,203
-place_0-100,Oven,258
-place_0-100,Coffee maker,246
-place_0-100,Shampoo,334
-place_0-100,Hangers,486
-place_0-100,First aid kit,87
-place_0-100,Hair dryer,409
-place_0-100,Dishes and silverware,334
-place_0-100,Kitchen,561
-place_0-100,Dishwasher,84
-place_0-100,Cooking basics,331
-place_0-100,Microwave,200
-place_0-100,High chair,30
-place_0-100,Patio or balcony,111
-place_0-100,Single level home,38
-place_0-100,Dedicated workspace,391
-place_0-100,Wifi,521
-place_0-100,Portable fans,36
-place_0-100,Free parking on premises,79
-place_0-100,Pocket wifi,63
-place_0-100,Shower gel,98
-place_0-100,Crib,27
-place_0-100,Private entrance,164
-place_0-100,Extra pillows and blankets,144
-place_0-100,Luggage dropoff allowed,95
-place_0-100,Refrigerator,325
-place_0-100,Carbon monoxide alarm,78
-place_0-100,Long term stays allowed,505
-place_0-100,Hot water,443
-place_0-100,Bed linens,251
-place_0-100,Bathtub,62
-place_0-100,Body soap,38
-place_0-100,Iron,457
-place_0-100,Freezer,50
-place_0-100,Free street parking,113
-place_0-100,Fire extinguisher,95
-place_0-100,Washer,342
-place_100-200,Heating,571
-place_100-200,Essentials,568
-place_100-200,TV,483
-place_100-200,Stove,269
-place_100-200,Children’s dinnerware,23
-place_100-200,Cleaning before checkout,25
-place_100-200,Ethernet connection,45
-place_100-200,Smoke alarm,147
-place_100-200,Pack ’n Play/travel crib,34
-place_100-200,Room-darkening shades,52
-place_100-200,Garden or backyard,37
-place_100-200,Lockbox,85
-place_100-200,Babysitter recommendations,24
-place_100-200,Dryer,308
-place_100-200,Oven,267
-place_100-200,Coffee maker,265
-place_100-200,Shampoo,324
-place_100-200,Hangers,516
-place_100-200,First aid kit,82
-place_100-200,Hair dryer,415
-place_100-200,Dishes and silverware,322
-place_100-200,Kitchen,576
-place_100-200,Dishwasher,171
-place_100-200,Cooking basics,381
-place_100-200,Microwave,204
-place_100-200,High chair,45
-place_100-200,Patio or balcony,118
-place_100-200,Single level home,31
-place_100-200,Dedicated workspace,442
-place_100-200,Wifi,568
-place_100-200,Free parking on premises,107
-place_100-200,Pocket wifi,42
-place_100-200,Shower gel,64
-place_100-200,Crib,41
-place_100-200,Private entrance,176
-place_100-200,Extra pillows and blankets,155
-place_100-200,Luggage dropoff allowed,112
-place_100-200,Refrigerator,295
-place_100-200,Carbon monoxide alarm,72
-place_100-200,Long term stays allowed,510
-place_100-200,Hot water,443
-place_100-200,Bed linens,234
-place_100-200,Bathtub,81
-place_100-200,Iron,512
-place_100-200,Children’s books and toys,39
-place_100-200,Freezer,24
-place_100-200,Free street parking,94
-place_100-200,Fire extinguisher,89
-place_100-200,Washer,484
-place_200-300,Heating,94
-place_200-300,Essentials,96
-place_200-300,TV,87
-place_200-300,Stove,50
-place_200-300,Smoke alarm,33
-place_200-300,Dryer,58
-place_200-300,Oven,50
-place_200-300,Coffee maker,50
-place_200-300,Shampoo,69
-place_200-300,Hangers,86
-place_200-300,First aid kit,24
-place_200-300,Hair dryer,80
-place_200-300,Dishes and silverware,57
-place_200-300,Kitchen,96
-place_200-300,Dishwasher,43
-place_200-300,Cooking basics,59
-place_200-300,Microwave,40
-place_200-300,Patio or balcony,34
-place_200-300,Dedicated workspace,74
-place_200-300,Wifi,96
-place_200-300,Free parking on premises,40
-place_200-300,Private entrance,38
-place_200-300,Extra pillows and blankets,34
-place_200-300,Luggage dropoff allowed,29
-place_200-300,Refrigerator,56
-place_200-300,Long term stays allowed,86
-place_200-300,Hot water,77
-place_200-300,Bed linens,49
-place_200-300,Bathtub,24
-place_200-300,Iron,80
-place_200-300,Free street parking,21
-place_200-300,Fire extinguisher,23
-place_200-300,Washer,75
-place_300-400,Heating,31
-place_300-400,Essentials,30
-place_300-400,TV,31
-place_300-400,Shampoo,29
-place_300-400,Hangers,30
-place_300-400,Hair dryer,28
-place_300-400,Kitchen,34
-place_300-400,Dedicated workspace,27
-place_300-400,Wifi,34
-place_300-400,Refrigerator,21
-place_300-400,Long term stays allowed,30
-place_300-400,Hot water,22
-place_300-400,Iron,31
-place_300-400,Washer,25
-Heating,room_0-100,570
-Essentials,room_0-100,572
-TV,room_0-100,318
-Stove,room_0-100,198
-Cleaning before checkout,room_0-100,45
-Ethernet connection,room_0-100,26
-Smoke alarm,room_0-100,152
-Room-darkening shades,room_0-100,45
-Garden or backyard,room_0-100,58
-Lockbox,room_0-100,41
-Dryer,room_0-100,275
-Oven,room_0-100,199
-Coffee maker,room_0-100,195
-Shampoo,room_0-100,362
-Hangers,room_0-100,493
-First aid kit,room_0-100,189
-Hair dryer,room_0-100,439
-Dishes and silverware,room_0-100,243
-Kitchen,room_0-100,493
-Dishwasher,room_0-100,119
-Cooking basics,room_0-100,268
-Microwave,room_0-100,193
-Patio or balcony,room_0-100,116
-Single level home,room_0-100,25
-Dedicated workspace,room_0-100,404
-Wifi,room_0-100,584
-Portable fans,room_0-100,23
-Free parking on premises,room_0-100,136
-Pocket wifi,room_0-100,48
-Shower gel,room_0-100,53
-Private entrance,room_0-100,50
-Extra pillows and blankets,room_0-100,153
-Luggage dropoff allowed,room_0-100,148
-Refrigerator,room_0-100,243
-Carbon monoxide alarm,room_0-100,98
-Long term stays allowed,room_0-100,504
-Hot water,room_0-100,423
-Bed linens,room_0-100,201
-Bathtub,room_0-100,71
-Iron,room_0-100,481
-Freezer,room_0-100,25
-BBQ grill,room_0-100,23
-Free street parking,room_0-100,112
-Fire extinguisher,room_0-100,147
-Washer,room_0-100,459
-Hot tub,room_0-100,31
-Heating,room_100-200,84
-Essentials,room_100-200,84
-TV,room_100-200,58
-Stove,room_100-200,25
-Smoke alarm,room_100-200,40
-Dryer,room_100-200,43
-Coffee maker,room_100-200,22
-Shampoo,room_100-200,67
-Hangers,room_100-200,73
-First aid kit,room_100-200,33
-Hair dryer,room_100-200,71
-Dishes and silverware,room_100-200,31
-Kitchen,room_100-200,63
-Dedicated workspace,room_100-200,65
-Wifi,room_100-200,84
-Extra pillows and blankets,room_100-200,22
-Luggage dropoff allowed,room_100-200,24
-Refrigerator,room_100-200,30
-Long term stays allowed,room_100-200,66
-Hot water,room_100-200,58
-Bed linens,room_100-200,31
-Iron,room_100-200,70
-Fire extinguisher,room_100-200,42
-Washer,room_100-200,54
+0-100,Heating,0.9549393414211439
+0-100,Conditioner,0.03119584055459272
+0-100,Essentials,0.9722703639514731
+0-100,Table corner guards,0.0034662045060658577
+0-100,TV,0.6707105719237435
+0-100,Stove,0.464471403812825
+0-100,Nespresso machine,0.060658578856152515
+0-100,Mini fridge,0.02079722703639515
+0-100,Outdoor furniture,0.0017331022530329288
+0-100,Safe,0.0034662045060658577
+0-100,Children’s dinnerware,0.012131715771230503
+0-100,Cleaning before checkout,0.07625649913344887
+0-100,Ethernet connection,0.07972270363951472
+0-100,Pour-over coffee,0.01559792027729636
+0-100,Fireplace guards,0.0017331022530329288
+0-100,Smoke alarm,0.22530329289428075
+0-100,Pack ’n Play/travel crib,0.022530329289428077
+0-100,Clothing storage,0.01733102253032929
+0-100,Room-darkening shades,0.09358752166377816
+0-100,Garden or backyard,0.07452339688041594
+0-100,Barbecue utensils,0.005199306759098787
+0-100,Lockbox,0.11611785095320624
+0-100,Babysitter recommendations,0.01559792027729636
+0-100,Wine glasses,0.022530329289428077
+0-100,Dryer,0.35181975736568455
+0-100,Oven,0.44714038128249567
+0-100,Coffee maker,0.42634315424610053
+0-100,Shampoo,0.5788561525129983
+0-100,Hangers,0.8422876949740035
+0-100,First aid kit,0.15077989601386482
+0-100,Hair dryer,0.708838821490468
+0-100,Baby bath,0.006932409012131715
+0-100,Bread maker,0.022530329289428077
+0-100,Dishes and silverware,0.5788561525129983
+0-100,Kitchen,0.9722703639514731
+0-100,Hot water kettle,0.03466204506065858
+0-100,Dishwasher,0.14558058925476602
+0-100,Outlet covers,0.005199306759098787
+0-100,Cooking basics,0.5736568457538995
+0-100,Microwave,0.3466204506065858
+0-100,High chair,0.05199306759098787
+0-100,Keurig coffee machine,0.0
+0-100,Patio or balcony,0.1923743500866551
+0-100,Beach essentials,0.0
+0-100,Single level home,0.0658578856152513
+0-100,Changing table,0.005199306759098787
+0-100,Dedicated workspace,0.6776429809358753
+0-100,Wifi,0.902946273830156
+0-100,Portable fans,0.06239168110918544
+0-100,Toaster,0.012131715771230503
+0-100,Free parking on premises,0.1369150779896014
+0-100,Pocket wifi,0.10918544194107452
+0-100,Shower gel,0.16984402079722705
+0-100,Drying rack for clothing,0.019064124783362217
+0-100,Crib,0.04679376083188908
+0-100,Private entrance,0.28422876949740034
+0-100,Extra pillows and blankets,0.24956672443674177
+0-100,Cleaning products,0.025996533795493933
+0-100,Luggage dropoff allowed,0.16464471403812825
+0-100,Refrigerator,0.5632582322357019
+0-100,Carbon monoxide alarm,0.13518197573656845
+0-100,Long term stays allowed,0.8752166377816292
+0-100,Waterfront,0.006932409012131715
+0-100,Hot water,0.7677642980935875
+0-100,Bed linens,0.43500866551126516
+0-100,Bathtub,0.10745233968804159
+0-100,Body soap,0.0658578856152513
+0-100,Iron,0.7920277296360485
+0-100,Baby safety gates,0.005199306759098787
+0-100,Children’s books and toys,0.02772963604852686
+0-100,Freezer,0.08665511265164645
+0-100,Dining table,0.03292894280762565
+0-100,BBQ grill,0.012131715771230503
+0-100,Free street parking,0.19584055459272098
+0-100,Fire extinguisher,0.16464471403812825
+0-100,Washer,0.5927209705372617
+0-100,Sound system,0.006932409012131715
+0-100,Board games,0.0034662045060658577
+0-100,Hot tub,0.03466204506065858
+0-100,Window guards,0.005199306759098787
+100-200,Heating,0.976068376068376
+100-200,Conditioner,0.006837606837606838
+100-200,Essentials,0.9709401709401709
+100-200,Table corner guards,0.003418803418803419
+100-200,TV,0.8256410256410256
+100-200,Stove,0.4598290598290598
+100-200,Nespresso machine,0.017094017094017096
+100-200,Mini fridge,0.008547008547008548
+100-200,Outdoor furniture,0.005128205128205128
+100-200,Safe,0.0017094017094017094
+100-200,Children’s dinnerware,0.039316239316239315
+100-200,Cleaning before checkout,0.042735042735042736
+100-200,Ethernet connection,0.07692307692307693
+100-200,Pour-over coffee,0.011965811965811967
+100-200,Fireplace guards,0.006837606837606838
+100-200,Smoke alarm,0.2512820512820513
+100-200,Pack ’n Play/travel crib,0.05811965811965812
+100-200,Clothing storage,0.008547008547008548
+100-200,Room-darkening shades,0.08888888888888889
+100-200,Garden or backyard,0.06324786324786325
+100-200,Barbecue utensils,0.008547008547008548
+100-200,Lockbox,0.1452991452991453
+100-200,Babysitter recommendations,0.041025641025641026
+100-200,Wine glasses,0.011965811965811967
+100-200,Dryer,0.5264957264957265
+100-200,Oven,0.4564102564102564
+100-200,Coffee maker,0.452991452991453
+100-200,Shampoo,0.5538461538461539
+100-200,Hangers,0.882051282051282
+100-200,First aid kit,0.14017094017094017
+100-200,Hair dryer,0.7094017094017094
+100-200,Baby bath,0.023931623931623933
+100-200,Bread maker,0.006837606837606838
+100-200,Dishes and silverware,0.5504273504273505
+100-200,Kitchen,0.9846153846153847
+100-200,Hot water kettle,0.013675213675213675
+100-200,Dishwasher,0.2923076923076923
+100-200,Outlet covers,0.015384615384615385
+100-200,Cooking basics,0.6512820512820513
+100-200,Microwave,0.3487179487179487
+100-200,High chair,0.07692307692307693
+100-200,Keurig coffee machine,0.0
+100-200,Patio or balcony,0.20170940170940171
+100-200,Beach essentials,0.006837606837606838
+100-200,Single level home,0.05299145299145299
+100-200,Changing table,0.03076923076923077
+100-200,Dedicated workspace,0.7555555555555555
+100-200,Wifi,0.9709401709401709
+100-200,Portable fans,0.03418803418803419
+100-200,Toaster,0.008547008547008548
+100-200,Free parking on premises,0.1829059829059829
+100-200,Pocket wifi,0.07179487179487179
+100-200,Shower gel,0.1094017094017094
+100-200,Drying rack for clothing,0.008547008547008548
+100-200,Crib,0.07008547008547009
+100-200,Private entrance,0.30085470085470084
+100-200,Extra pillows and blankets,0.26495726495726496
+100-200,Cleaning products,0.010256410256410256
+100-200,Luggage dropoff allowed,0.19145299145299147
+100-200,Refrigerator,0.5042735042735043
+100-200,Carbon monoxide alarm,0.12307692307692308
+100-200,Long term stays allowed,0.8717948717948718
+100-200,Waterfront,0.013675213675213675
+100-200,Hot water,0.7572649572649572
+100-200,Bed linens,0.4
+100-200,Bathtub,0.13846153846153847
+100-200,Body soap,0.02564102564102564
+100-200,Iron,0.8752136752136752
+100-200,Baby safety gates,0.003418803418803419
+100-200,Children’s books and toys,0.06666666666666667
+100-200,Freezer,0.041025641025641026
+100-200,Dining table,0.010256410256410256
+100-200,BBQ grill,0.02905982905982906
+100-200,Free street parking,0.1606837606837607
+100-200,Fire extinguisher,0.15213675213675212
+100-200,Washer,0.8273504273504273
+100-200,Sound system,0.006837606837606838
+100-200,Board games,0.003418803418803419
+100-200,Hot tub,0.02905982905982906
+100-200,Window guards,0.020512820512820513
+200-300,Heating,0.9591836734693877
+200-300,Conditioner,0.0
+200-300,Essentials,0.9795918367346939
+200-300,Table corner guards,0.0
+200-300,TV,0.8877551020408163
+200-300,Stove,0.5102040816326531
+200-300,Nespresso machine,0.09183673469387756
+200-300,Mini fridge,0.0
+200-300,Outdoor furniture,0.01020408163265306
+200-300,Safe,0.0
+200-300,Children’s dinnerware,0.07142857142857142
+200-300,Cleaning before checkout,0.07142857142857142
+200-300,Ethernet connection,0.061224489795918366
+200-300,Pour-over coffee,0.02040816326530612
+200-300,Fireplace guards,0.030612244897959183
+200-300,Smoke alarm,0.336734693877551
+200-300,Pack ’n Play/travel crib,0.11224489795918367
+200-300,Clothing storage,0.01020408163265306
+200-300,Room-darkening shades,0.12244897959183673
+200-300,Garden or backyard,0.14285714285714285
+200-300,Barbecue utensils,0.02040816326530612
+200-300,Lockbox,0.12244897959183673
+200-300,Babysitter recommendations,0.030612244897959183
+200-300,Wine glasses,0.04081632653061224
+200-300,Dryer,0.5918367346938775
+200-300,Oven,0.5102040816326531
+200-300,Coffee maker,0.5102040816326531
+200-300,Shampoo,0.7040816326530612
+200-300,Hangers,0.8775510204081632
+200-300,First aid kit,0.24489795918367346
+200-300,Hair dryer,0.8163265306122449
+200-300,Baby bath,0.02040816326530612
+200-300,Bread maker,0.030612244897959183
+200-300,Dishes and silverware,0.5816326530612245
+200-300,Kitchen,0.9795918367346939
+200-300,Hot water kettle,0.04081632653061224
+200-300,Dishwasher,0.4387755102040816
+200-300,Outlet covers,0.01020408163265306
+200-300,Cooking basics,0.6020408163265306
+200-300,Microwave,0.40816326530612246
+200-300,High chair,0.14285714285714285
+200-300,Keurig coffee machine,0.0
+200-300,Patio or balcony,0.3469387755102041
+200-300,Beach essentials,0.02040816326530612
+200-300,Single level home,0.061224489795918366
+200-300,Changing table,0.061224489795918366
+200-300,Dedicated workspace,0.7551020408163265
+200-300,Wifi,0.9795918367346939
+200-300,Portable fans,0.08163265306122448
+200-300,Toaster,0.030612244897959183
+200-300,Free parking on premises,0.40816326530612246
+200-300,Pocket wifi,0.11224489795918367
+200-300,Shower gel,0.19387755102040816
+200-300,Drying rack for clothing,0.030612244897959183
+200-300,Crib,0.14285714285714285
+200-300,Private entrance,0.3877551020408163
+200-300,Extra pillows and blankets,0.3469387755102041
+200-300,Cleaning products,0.030612244897959183
+200-300,Luggage dropoff allowed,0.29591836734693877
+200-300,Refrigerator,0.5714285714285714
+200-300,Carbon monoxide alarm,0.19387755102040816
+200-300,Long term stays allowed,0.8775510204081632
+200-300,Waterfront,0.02040816326530612
+200-300,Hot water,0.7857142857142857
+200-300,Bed linens,0.5
+200-300,Bathtub,0.24489795918367346
+200-300,Body soap,0.030612244897959183
+200-300,Iron,0.8163265306122449
+200-300,Baby safety gates,0.030612244897959183
+200-300,Children’s books and toys,0.10204081632653061
+200-300,Freezer,0.09183673469387756
+200-300,Dining table,0.05102040816326531
+200-300,BBQ grill,0.07142857142857142
+200-300,Free street parking,0.21428571428571427
+200-300,Fire extinguisher,0.23469387755102042
+200-300,Washer,0.7653061224489796
+200-300,Sound system,0.05102040816326531
+200-300,Board games,0.0
+200-300,Hot tub,0.05102040816326531
+200-300,Window guards,0.01020408163265306
+300-400,Heating,0.9117647058823529
+300-400,Conditioner,0.0
+300-400,Essentials,0.8823529411764706
+300-400,Table corner guards,0.029411764705882353
+300-400,TV,0.9117647058823529
+300-400,Stove,0.4117647058823529
+300-400,Nespresso machine,0.029411764705882353
+300-400,Mini fridge,0.0
+300-400,Outdoor furniture,0.0
+300-400,Safe,0.0
+300-400,Children’s dinnerware,0.08823529411764706
+300-400,Cleaning before checkout,0.029411764705882353
+300-400,Ethernet connection,0.029411764705882353
+300-400,Pour-over coffee,0.0
+300-400,Fireplace guards,0.029411764705882353
+300-400,Smoke alarm,0.38235294117647056
+300-400,Pack ’n Play/travel crib,0.08823529411764706
+300-400,Clothing storage,0.0
+300-400,Room-darkening shades,0.08823529411764706
+300-400,Garden or backyard,0.11764705882352941
+300-400,Barbecue utensils,0.058823529411764705
+300-400,Lockbox,0.08823529411764706
+300-400,Babysitter recommendations,0.11764705882352941
+300-400,Wine glasses,0.0
+300-400,Dryer,0.5588235294117647
+300-400,Oven,0.5588235294117647
+300-400,Coffee maker,0.47058823529411764
+300-400,Shampoo,0.8529411764705882
+300-400,Hangers,0.8823529411764706
+300-400,First aid kit,0.2647058823529412
+300-400,Hair dryer,0.8235294117647058
+300-400,Baby bath,0.0
+300-400,Bread maker,0.08823529411764706
+300-400,Dishes and silverware,0.47058823529411764
+300-400,Kitchen,1.0
+300-400,Hot water kettle,0.0
+300-400,Dishwasher,0.4117647058823529
+300-400,Outlet covers,0.029411764705882353
+300-400,Cooking basics,0.5294117647058824
+300-400,Microwave,0.3235294117647059
+300-400,High chair,0.11764705882352941
+300-400,Keurig coffee machine,0.0
+300-400,Patio or balcony,0.17647058823529413
+300-400,Beach essentials,0.029411764705882353
+300-400,Single level home,0.08823529411764706
+300-400,Changing table,0.058823529411764705
+300-400,Dedicated workspace,0.7941176470588235
+300-400,Wifi,1.0
+300-400,Portable fans,0.0
+300-400,Toaster,0.0
+300-400,Free parking on premises,0.3235294117647059
+300-400,Pocket wifi,0.029411764705882353
+300-400,Shower gel,0.11764705882352941
+300-400,Drying rack for clothing,0.0
+300-400,Crib,0.23529411764705882
+300-400,Private entrance,0.23529411764705882
+300-400,Extra pillows and blankets,0.2647058823529412
+300-400,Cleaning products,0.0
+300-400,Luggage dropoff allowed,0.2647058823529412
+300-400,Refrigerator,0.6176470588235294
+300-400,Carbon monoxide alarm,0.14705882352941177
+300-400,Long term stays allowed,0.8823529411764706
+300-400,Waterfront,0.029411764705882353
+300-400,Hot water,0.6470588235294118
+300-400,Bed linens,0.4117647058823529
+300-400,Bathtub,0.23529411764705882
+300-400,Body soap,0.0
+300-400,Iron,0.9117647058823529
+300-400,Baby safety gates,0.058823529411764705
+300-400,Children’s books and toys,0.058823529411764705
+300-400,Freezer,0.029411764705882353
+300-400,Dining table,0.0
+300-400,BBQ grill,0.08823529411764706
+300-400,Free street parking,0.14705882352941177
+300-400,Fire extinguisher,0.2647058823529412
+300-400,Washer,0.7352941176470589
+300-400,Sound system,0.0
+300-400,Board games,0.0
+300-400,Hot tub,0.14705882352941177
+300-400,Window guards,0.029411764705882353
+400-500,Heating,1.0
+400-500,Conditioner,0.0
+400-500,Essentials,1.0
+400-500,Table corner guards,0.0
+400-500,TV,1.0
+400-500,Stove,0.4375
+400-500,Nespresso machine,0.1875
+400-500,Mini fridge,0.0
+400-500,Outdoor furniture,0.0625
+400-500,Safe,0.0
+400-500,Children’s dinnerware,0.0
+400-500,Cleaning before checkout,0.0
+400-500,Ethernet connection,0.1875
+400-500,Pour-over coffee,0.0625
+400-500,Fireplace guards,0.0
+400-500,Smoke alarm,0.4375
+400-500,Pack ’n Play/travel crib,0.0625
+400-500,Clothing storage,0.1875
+400-500,Room-darkening shades,0.125
+400-500,Garden or backyard,0.0625
+400-500,Barbecue utensils,0.125
+400-500,Lockbox,0.1875
+400-500,Babysitter recommendations,0.0625
+400-500,Wine glasses,0.1875
+400-500,Dryer,0.6875
+400-500,Oven,0.4375
+400-500,Coffee maker,0.375
+400-500,Shampoo,0.6875
+400-500,Hangers,0.9375
+400-500,First aid kit,0.25
+400-500,Hair dryer,0.6875
+400-500,Baby bath,0.0625
+400-500,Bread maker,0.0
+400-500,Dishes and silverware,0.5625
+400-500,Kitchen,1.0
+400-500,Hot water kettle,0.1875
+400-500,Dishwasher,0.3125
+400-500,Outlet covers,0.0
+400-500,Cooking basics,0.375
+400-500,Microwave,0.4375
+400-500,High chair,0.125
+400-500,Keurig coffee machine,0.0625
+400-500,Patio or balcony,0.25
+400-500,Beach essentials,0.0625
+400-500,Single level home,0.0625
+400-500,Changing table,0.0625
+400-500,Dedicated workspace,0.6875
+400-500,Wifi,1.0
+400-500,Portable fans,0.0625
+400-500,Toaster,0.125
+400-500,Free parking on premises,0.5
+400-500,Pocket wifi,0.125
+400-500,Shower gel,0.1875
+400-500,Drying rack for clothing,0.125
+400-500,Crib,0.125
+400-500,Private entrance,0.4375
+400-500,Extra pillows and blankets,0.3125
+400-500,Cleaning products,0.0625
+400-500,Luggage dropoff allowed,0.0625
+400-500,Refrigerator,0.5
+400-500,Carbon monoxide alarm,0.375
+400-500,Long term stays allowed,0.8125
+400-500,Waterfront,0.0
+400-500,Hot water,0.625
+400-500,Bed linens,0.375
+400-500,Bathtub,0.25
+400-500,Body soap,0.125
+400-500,Iron,1.0
+400-500,Baby safety gates,0.0
+400-500,Children’s books and toys,0.125
+400-500,Freezer,0.1875
+400-500,Dining table,0.1875
+400-500,BBQ grill,0.0
+400-500,Free street parking,0.125
+400-500,Fire extinguisher,0.1875
+400-500,Washer,0.75
+400-500,Sound system,0.0625
+400-500,Board games,0.0
+400-500,Hot tub,0.0625
+400-500,Window guards,0.0
+Heating,0-100,0.9313725490196079
+Conditioner,0-100,0.0196078431372549
+Essentials,0-100,0.934640522875817
+Table corner guards,0-100,0.0032679738562091504
+TV,0-100,0.5196078431372549
+Stove,0-100,0.3235294117647059
+Nespresso machine,0-100,0.02287581699346405
+Mini fridge,0-100,0.017973856209150325
+Outdoor furniture,0-100,0.0016339869281045752
+Safe,0-100,0.0032679738562091504
+Children’s dinnerware,0-100,0.017973856209150325
+Cleaning before checkout,0-100,0.07352941176470588
+Ethernet connection,0-100,0.042483660130718956
+Pour-over coffee,0-100,0.021241830065359478
+Fireplace guards,0-100,0.006535947712418301
+Smoke alarm,0-100,0.24836601307189543
+Pack ’n Play/travel crib,0-100,0.0196078431372549
+Clothing storage,0-100,0.024509803921568627
+Room-darkening shades,0-100,0.07352941176470588
+Garden or backyard,0-100,0.09477124183006536
+Barbecue utensils,0-100,0.008169934640522876
+Lockbox,0-100,0.06699346405228758
+Babysitter recommendations,0-100,0.03104575163398693
+Wine glasses,0-100,0.021241830065359478
+Dryer,0-100,0.4493464052287582
+Oven,0-100,0.32516339869281047
+Coffee maker,0-100,0.31862745098039214
+Shampoo,0-100,0.5915032679738562
+Hangers,0-100,0.8055555555555556
+First aid kit,0-100,0.3088235294117647
+Hair dryer,0-100,0.7173202614379085
+Baby bath,0-100,0.008169934640522876
+Bread maker,0-100,0.014705882352941176
+Dishes and silverware,0-100,0.39705882352941174
+Kitchen,0-100,0.8055555555555556
+Hot water kettle,0-100,0.029411764705882353
+Dishwasher,0-100,0.19444444444444445
+Outlet covers,0-100,0.0016339869281045752
+Cooking basics,0-100,0.43790849673202614
+Microwave,0-100,0.315359477124183
+High chair,0-100,0.017973856209150325
+Keurig coffee machine,0-100,0.0
+Patio or balcony,0-100,0.1895424836601307
+Beach essentials,0-100,0.008169934640522876
+Single level home,0-100,0.04084967320261438
+Changing table,0-100,0.014705882352941176
+Dedicated workspace,0-100,0.6601307189542484
+Wifi,0-100,0.954248366013072
+Portable fans,0-100,0.03758169934640523
+Toaster,0-100,0.014705882352941176
+Free parking on premises,0-100,0.2222222222222222
+Pocket wifi,0-100,0.0784313725490196
+Shower gel,0-100,0.08660130718954248
+Drying rack for clothing,0-100,0.0196078431372549
+Crib,0-100,0.008169934640522876
+Private entrance,0-100,0.08169934640522876
+Extra pillows and blankets,0-100,0.25
+Cleaning products,0-100,0.021241830065359478
+Luggage dropoff allowed,0-100,0.24183006535947713
+Refrigerator,0-100,0.39705882352941174
+Carbon monoxide alarm,0-100,0.16013071895424835
+Long term stays allowed,0-100,0.8235294117647058
+Waterfront,0-100,0.00980392156862745
+Hot water,0-100,0.6911764705882353
+Bed linens,0-100,0.3284313725490196
+Bathtub,0-100,0.11601307189542484
+Body soap,0-100,0.03104575163398693
+Iron,0-100,0.7859477124183006
+Baby safety gates,0-100,0.0
+Children’s books and toys,0-100,0.026143790849673203
+Freezer,0-100,0.04084967320261438
+Dining table,0-100,0.02287581699346405
+BBQ grill,0-100,0.03758169934640523
+Free street parking,0-100,0.1830065359477124
+Fire extinguisher,0-100,0.24019607843137256
+Washer,0-100,0.75
+Sound system,0-100,0.004901960784313725
+Board games,0-100,0.0016339869281045752
+Hot tub,0-100,0.05065359477124183
+Window guards,0-100,0.011437908496732025
+Heating,100-200,0.9882352941176471
+Conditioner,100-200,0.023529411764705882
+Essentials,100-200,0.9882352941176471
+Table corner guards,100-200,0.0
+TV,100-200,0.6823529411764706
+Stove,100-200,0.29411764705882354
+Nespresso machine,100-200,0.0
+Mini fridge,100-200,0.011764705882352941
+Outdoor furniture,100-200,0.0
+Safe,100-200,0.011764705882352941
+Children’s dinnerware,100-200,0.023529411764705882
+Cleaning before checkout,100-200,0.023529411764705882
+Ethernet connection,100-200,0.03529411764705882
+Pour-over coffee,100-200,0.011764705882352941
+Fireplace guards,100-200,0.011764705882352941
+Smoke alarm,100-200,0.47058823529411764
+Pack ’n Play/travel crib,100-200,0.047058823529411764
+Clothing storage,100-200,0.011764705882352941
+Room-darkening shades,100-200,0.023529411764705882
+Garden or backyard,100-200,0.047058823529411764
+Barbecue utensils,100-200,0.0
+Lockbox,100-200,0.03529411764705882
+Babysitter recommendations,100-200,0.011764705882352941
+Wine glasses,100-200,0.0
+Dryer,100-200,0.5058823529411764
+Oven,100-200,0.18823529411764706
+Coffee maker,100-200,0.25882352941176473
+Shampoo,100-200,0.788235294117647
+Hangers,100-200,0.8588235294117647
+First aid kit,100-200,0.38823529411764707
+Hair dryer,100-200,0.8352941176470589
+Baby bath,100-200,0.0
+Bread maker,100-200,0.0
+Dishes and silverware,100-200,0.36470588235294116
+Kitchen,100-200,0.7411764705882353
+Hot water kettle,100-200,0.011764705882352941
+Dishwasher,100-200,0.12941176470588237
+Outlet covers,100-200,0.0
+Cooking basics,100-200,0.21176470588235294
+Microwave,100-200,0.16470588235294117
+High chair,100-200,0.023529411764705882
+Keurig coffee machine,100-200,0.0
+Patio or balcony,100-200,0.08235294117647059
+Beach essentials,100-200,0.0
+Single level home,100-200,0.011764705882352941
+Changing table,100-200,0.023529411764705882
+Dedicated workspace,100-200,0.7647058823529411
+Wifi,100-200,0.9882352941176471
+Portable fans,100-200,0.011764705882352941
+Toaster,100-200,0.011764705882352941
+Free parking on premises,100-200,0.2
+Pocket wifi,100-200,0.03529411764705882
+Shower gel,100-200,0.21176470588235294
+Drying rack for clothing,100-200,0.011764705882352941
+Crib,100-200,0.07058823529411765
+Private entrance,100-200,0.09411764705882353
+Extra pillows and blankets,100-200,0.25882352941176473
+Cleaning products,100-200,0.011764705882352941
+Luggage dropoff allowed,100-200,0.2823529411764706
+Refrigerator,100-200,0.35294117647058826
+Carbon monoxide alarm,100-200,0.23529411764705882
+Long term stays allowed,100-200,0.7764705882352941
+Waterfront,100-200,0.0
+Hot water,100-200,0.6823529411764706
+Bed linens,100-200,0.36470588235294116
+Bathtub,100-200,0.03529411764705882
+Body soap,100-200,0.023529411764705882
+Iron,100-200,0.8235294117647058
+Baby safety gates,100-200,0.0
+Children’s books and toys,100-200,0.0
+Freezer,100-200,0.011764705882352941
+Dining table,100-200,0.011764705882352941
+BBQ grill,100-200,0.0
+Free street parking,100-200,0.17647058823529413
+Fire extinguisher,100-200,0.49411764705882355
+Washer,100-200,0.6352941176470588
+Sound system,100-200,0.0
+Board games,100-200,0.0
+Hot tub,100-200,0.023529411764705882
+Window guards,100-200,0.0
+Heating,200-300,0.9090909090909091
+Conditioner,200-300,0.0
+Essentials,200-300,1.0
+Table corner guards,200-300,0.0
+TV,200-300,0.9090909090909091
+Stove,200-300,0.09090909090909091
+Nespresso machine,200-300,0.0
+Mini fridge,200-300,0.0
+Outdoor furniture,200-300,0.0
+Safe,200-300,0.0
+Children’s dinnerware,200-300,0.0
+Cleaning before checkout,200-300,0.0
+Ethernet connection,200-300,0.09090909090909091
+Pour-over coffee,200-300,0.0
+Fireplace guards,200-300,0.0
+Smoke alarm,200-300,0.8181818181818182
+Pack ’n Play/travel crib,200-300,0.18181818181818182
+Clothing storage,200-300,0.0
+Room-darkening shades,200-300,0.0
+Garden or backyard,200-300,0.0
+Barbecue utensils,200-300,0.0
+Lockbox,200-300,0.0
+Babysitter recommendations,200-300,0.0
+Wine glasses,200-300,0.0
+Dryer,200-300,0.09090909090909091
+Oven,200-300,0.09090909090909091
+Coffee maker,200-300,0.18181818181818182
+Shampoo,200-300,0.6363636363636364
+Hangers,200-300,0.8181818181818182
+First aid kit,200-300,0.5454545454545454
+Hair dryer,200-300,1.0
+Baby bath,200-300,0.0
+Bread maker,200-300,0.0
+Dishes and silverware,200-300,0.18181818181818182
+Kitchen,200-300,0.45454545454545453
+Hot water kettle,200-300,0.0
+Dishwasher,200-300,0.0
+Outlet covers,200-300,0.0
+Cooking basics,200-300,0.0
+Microwave,200-300,0.18181818181818182
+High chair,200-300,0.0
+Keurig coffee machine,200-300,0.0
+Patio or balcony,200-300,0.0
+Beach essentials,200-300,0.0
+Single level home,200-300,0.0
+Changing table,200-300,0.0
+Dedicated workspace,200-300,0.6363636363636364
+Wifi,200-300,0.9090909090909091
+Portable fans,200-300,0.0
+Toaster,200-300,0.0
+Free parking on premises,200-300,0.18181818181818182
+Pocket wifi,200-300,0.0
+Shower gel,200-300,0.09090909090909091
+Drying rack for clothing,200-300,0.0
+Crib,200-300,0.09090909090909091
+Private entrance,200-300,0.45454545454545453
+Extra pillows and blankets,200-300,0.09090909090909091
+Cleaning products,200-300,0.0
+Luggage dropoff allowed,200-300,0.0
+Refrigerator,200-300,0.18181818181818182
+Carbon monoxide alarm,200-300,0.09090909090909091
+Long term stays allowed,200-300,0.9090909090909091
+Waterfront,200-300,0.0
+Hot water,200-300,0.2727272727272727
+Bed linens,200-300,0.09090909090909091
+Bathtub,200-300,0.0
+Body soap,200-300,0.0
+Iron,200-300,0.36363636363636365
+Baby safety gates,200-300,0.0
+Children’s books and toys,200-300,0.09090909090909091
+Freezer,200-300,0.0
+Dining table,200-300,0.0
+BBQ grill,200-300,0.0
+Free street parking,200-300,0.09090909090909091
+Fire extinguisher,200-300,0.6363636363636364
+Washer,200-300,0.18181818181818182
+Sound system,200-300,0.0
+Board games,200-300,0.0
+Hot tub,200-300,0.09090909090909091
+Window guards,200-300,0.0
+Heating,300-400,0.5
+Conditioner,300-400,0.5
+Essentials,300-400,1.0
+Table corner guards,300-400,0.0
+TV,300-400,0.5
+Stove,300-400,0.5
+Nespresso machine,300-400,0.0
+Mini fridge,300-400,0.5
+Outdoor furniture,300-400,0.0
+Safe,300-400,0.5
+Children’s dinnerware,300-400,0.5
+Cleaning before checkout,300-400,0.0
+Ethernet connection,300-400,0.0
+Pour-over coffee,300-400,0.5
+Fireplace guards,300-400,0.0
+Smoke alarm,300-400,0.0
+Pack ’n Play/travel crib,300-400,0.5
+Clothing storage,300-400,0.5
+Room-darkening shades,300-400,0.5
+Garden or backyard,300-400,0.0
+Barbecue utensils,300-400,0.0
+Lockbox,300-400,0.0
+Babysitter recommendations,300-400,0.0
+Wine glasses,300-400,0.0
+Dryer,300-400,0.5
+Oven,300-400,0.5
+Coffee maker,300-400,0.5
+Shampoo,300-400,1.0
+Hangers,300-400,1.0
+First aid kit,300-400,0.5
+Hair dryer,300-400,1.0
+Baby bath,300-400,0.0
+Bread maker,300-400,0.0
+Dishes and silverware,300-400,0.5
+Kitchen,300-400,1.0
+Hot water kettle,300-400,0.5
+Dishwasher,300-400,0.5
+Outlet covers,300-400,0.0
+Cooking basics,300-400,0.5
+Microwave,300-400,0.5
+High chair,300-400,0.5
+Keurig coffee machine,300-400,0.0
+Patio or balcony,300-400,0.5
+Beach essentials,300-400,0.0
+Single level home,300-400,0.0
+Changing table,300-400,0.5
+Dedicated workspace,300-400,1.0
+Wifi,300-400,1.0
+Portable fans,300-400,0.5
+Toaster,300-400,0.5
+Free parking on premises,300-400,0.5
+Pocket wifi,300-400,0.0
+Shower gel,300-400,0.5
+Drying rack for clothing,300-400,0.5
+Crib,300-400,0.0
+Private entrance,300-400,0.5
+Extra pillows and blankets,300-400,0.5
+Cleaning products,300-400,0.5
+Luggage dropoff allowed,300-400,0.5
+Refrigerator,300-400,0.5
+Carbon monoxide alarm,300-400,0.0
+Long term stays allowed,300-400,0.5
+Waterfront,300-400,0.0
+Hot water,300-400,1.0
+Bed linens,300-400,0.5
+Bathtub,300-400,0.5
+Body soap,300-400,0.5
+Iron,300-400,0.5
+Baby safety gates,300-400,0.0
+Children’s books and toys,300-400,0.0
+Freezer,300-400,0.5
+Dining table,300-400,0.5
+BBQ grill,300-400,0.0
+Free street parking,300-400,0.5
+Fire extinguisher,300-400,0.5
+Washer,300-400,1.0
+Sound system,300-400,0.0
+Board games,300-400,0.0
+Hot tub,300-400,0.0
+Window guards,300-400,0.0
+Heating,400-500,1.0
+Conditioner,400-500,0.0
+Essentials,400-500,1.0
+Table corner guards,400-500,0.0
+TV,400-500,0.0
+Stove,400-500,0.0
+Nespresso machine,400-500,0.0
+Mini fridge,400-500,0.0
+Outdoor furniture,400-500,0.0
+Safe,400-500,0.0
+Children’s dinnerware,400-500,0.0
+Cleaning before checkout,400-500,0.0
+Ethernet connection,400-500,0.0
+Pour-over coffee,400-500,0.0
+Fireplace guards,400-500,0.0
+Smoke alarm,400-500,0.0
+Pack ’n Play/travel crib,400-500,0.0
+Clothing storage,400-500,0.0
+Room-darkening shades,400-500,0.0
+Garden or backyard,400-500,0.0
+Barbecue utensils,400-500,0.0
+Lockbox,400-500,0.0
+Babysitter recommendations,400-500,0.0
+Wine glasses,400-500,0.0
+Dryer,400-500,0.5
+Oven,400-500,0.0
+Coffee maker,400-500,0.5
+Shampoo,400-500,1.0
+Hangers,400-500,0.5
+First aid kit,400-500,1.0
+Hair dryer,400-500,0.5
+Baby bath,400-500,0.0
+Bread maker,400-500,0.0
+Dishes and silverware,400-500,0.0
+Kitchen,400-500,1.0
+Hot water kettle,400-500,0.0
+Dishwasher,400-500,0.0
+Outlet covers,400-500,0.0
+Cooking basics,400-500,0.0
+Microwave,400-500,0.0
+High chair,400-500,0.0
+Keurig coffee machine,400-500,0.0
+Patio or balcony,400-500,0.0
+Beach essentials,400-500,0.0
+Single level home,400-500,0.0
+Changing table,400-500,0.0
+Dedicated workspace,400-500,0.0
+Wifi,400-500,0.5
+Portable fans,400-500,0.0
+Toaster,400-500,0.0
+Free parking on premises,400-500,0.5
+Pocket wifi,400-500,0.0
+Shower gel,400-500,0.0
+Drying rack for clothing,400-500,0.0
+Crib,400-500,0.0
+Private entrance,400-500,0.0
+Extra pillows and blankets,400-500,0.0
+Cleaning products,400-500,0.0
+Luggage dropoff allowed,400-500,0.0
+Refrigerator,400-500,0.0
+Carbon monoxide alarm,400-500,0.0
+Long term stays allowed,400-500,1.0
+Waterfront,400-500,0.0
+Hot water,400-500,0.5
+Bed linens,400-500,0.0
+Bathtub,400-500,0.0
+Body soap,400-500,0.0
+Iron,400-500,0.5
+Baby safety gates,400-500,0.0
+Children’s books and toys,400-500,0.0
+Freezer,400-500,0.0
+Dining table,400-500,0.0
+BBQ grill,400-500,0.0
+Free street parking,400-500,0.0
+Fire extinguisher,400-500,0.5
+Washer,400-500,1.0
+Sound system,400-500,0.0
+Board games,400-500,0.0
+Hot tub,400-500,0.5
+Window guards,400-500,0.0
