@@ -524,6 +524,12 @@ section {
   stroke-opacity: .5;
 }
 
+#sankey_titles{
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 40px;
+}
+
 /*--------------------------------------------------------------
 # Akills
 --------------------------------------------------------------*/
