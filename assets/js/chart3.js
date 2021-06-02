@@ -64,6 +64,7 @@ class SankeyPlot{
     this.svg = d3.select("#" + id)
         .attr("width", this.width + this.margin.left + this.margin.right)
         .attr("height", this.height + this.margin.top + this.margin.bottom)
+        .attr("font-size", 10)
         .append("g")
         .attr("transform",
             "translate(" + this.margin.left + "," + this.margin.top + ")");
@@ -127,7 +128,7 @@ makeNodesObject(){
 
 makeGraph(){
 
-  var color = d3.scaleOrdinal(d3.schemeCategory10);
+  var color = d3.scaleOrdinal(d3.schemePaired);
 
   var formatNumber = d3.format(",.2f"), // zero decimal places
       format = function(d) { return formatNumber(d); };
@@ -139,6 +140,8 @@ makeGraph(){
       .data(graph.links)
     .enter().append("path")
       .attr("class", "link")
+      .attr("stroke", d => color(d.source))
+      .attr("fill", d => color(d.source))
       .attr("d", d3.sankeyLinkHorizontal())
       .attr("stroke-width", function(d) { return d.width; });
 
