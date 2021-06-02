@@ -15,9 +15,11 @@ function whenDocumentLoaded(action) {
 // *******************//
 class ScatterPlot {
 
-    constructor(id, listings, featureX, featureY, button1Id, button2Id, width = 500, height = 450) {
+    constructor(id, listings, featureX, featureY, button1Id, button2Id, width = 300, height = 500) {
 
         this.button1Id = button1Id, this.button2Id = button2Id;
+
+        this.location = 'romandie';
 
         this.listings = listings, this.featureX = featureX, this.featureY = featureY;
 
@@ -29,9 +31,22 @@ class ScatterPlot {
         this.svg = d3.select("#" + id)
             .attr("width", this.width + this.margin.left + this.margin.right)
             .attr("height", this.height + this.margin.top + this.margin.bottom)
+            .classed('svg-content-responsive', true)
             .append("g")
             .attr("transform",
                 "translate(" + this.margin.left + "," + this.margin.top + ")");
+
+    }
+
+    filteredListings() {
+
+        if (this.location == 'romandie') {
+            return this.listings.filter(l => (l['region'] == 'Geneva') || (l['region'] == 'Vaud') );
+        } else if (this.location == 'zurich') {
+            return this.listings.filter(l => l['region'] == 'Zurich');
+        } else {
+            return {}
+        }
 
     }
 
@@ -39,7 +54,6 @@ class ScatterPlot {
 
         // Prepare canvas
         this.svg
-            .classed('svg-container', true)
             .append("g")
             .attr("transform", "translate(" + this.margin.left + "," + this.margin.top + ")");
 
@@ -51,7 +65,7 @@ class ScatterPlot {
 
     addAxes(xlabel, ylabel) {
 
-        var tempListings = this.listings
+        var tempListings = this.filteredListings()
             .filter(l => l[this.featureX] != NaN)
             .filter(l => l[this.featureY] != NaN);
 
@@ -101,7 +115,7 @@ class ScatterPlot {
         this.svg.append('g')
             .attr('id', 'chart')
             .selectAll("dot")
-            .data(this.listings)
+            .data(this.filteredListings())
             .enter()
             .append("circle")
             .attr("cx", d => this.x(d[featureX]))
@@ -137,6 +151,14 @@ class ScatterPlot {
 
     }
 
+    updateLocation(location) {
+
+        this.location = location;
+
+        this.update();
+
+    }
+
 }
 
 // *******************//
@@ -144,23 +166,30 @@ class ScatterPlot {
 // *******************//
 class ChoroPlot {
 
-    constructor(id, legendId, geojson, listings, features, feature = 'price', width = 500, height = 450) {
+    constructor(id, legendId, geojson, format, listings, features, feature, width = 300, height = 400) {
 
         this.id = id
 
         this.geojson = geojson;
+        this.format = format;
+        this.location = 'romandie'
+
         this.listings = listings;
 
         this.features = features;
 
-        this.updateFeature(feature);
+        this.updateFeature(feature.value);
+
+        this.width = width;
+        this.height = height;
 
         this.svg = d3.select("#" + this.id)
             .classed('svg-content-responsive', true)
             .attr("preserveAspectRatio", "xMinYMin meet")
-            .attr("viewBox", "0 0 " + width + " " + height)
+            .attr("viewBox", "0 0 " + this.width + " " + this.height)
 
         this.legendId = legendId
+        this.legendText = feature.text
     }
 
     updateFeature(feature) {
@@ -220,15 +249,17 @@ class ChoroPlot {
 
     show() {
 
-        // var projection = d3.geoEquirectangular();
-        var projection = d3.geoMercator().translate([-500, -160]).scale(20000).center([4.53, 47.3]);
+        var projection = d3.geoMercator()
+            .translate([this.width / 2, this.height / 2])
+            .scale(this.format[this.location].scale)
+            .center(d3.geoCentroid(this.geojson[this.location]));
 
         var path = d3.geoPath().projection(projection);
 
         this.svg
             .append('g').attr('id', 'map')
             .selectAll('path')
-            .data(this.geojson.features)
+            .data(this.geojson[this.location].features)
             .enter()
             .append('path')
             .attr('d', path)
@@ -278,27 +309,53 @@ class ChoroPlot {
         this.legend({
             selector: 'svg#' + this.legendId,
             color: this.colorScale,
-            title: this.features[this.feature]
+            title: this.features[this.feature],
+            width: this.width - 100
+        });
+
+    }
+
+    updateLegend(legendText) {
+        
+        this.legendText = legendText;
+
+        d3.select('svg#' + this.legendId)
+        .selectAll('*')
+        .remove()
+
+        this.legend({
+            selector: 'svg#' + this.legendId,
+            color: this.colorScale,
+            title: this.legendText,
+            width: this.width - 100
         });
 
     }
 
     update(option, legendText) {
 
+
         this.updateFeature(option);
 
         this.fill();
+        
+        this.updateLegend(legendText);
 
-        d3.select('svg#' + this.legendId)
-            .selectAll('*')
-            .remove()
-
-        this.legend({
-            selector: 'svg#' + this.legendId,
-            color: this.colorScale,
-            title: legendText
-        });
     }
+
+    updateLocation(location) {
+
+        this.location = location;
+
+        this.svg.select('#map')
+            .remove();
+
+        this.show();
+
+        this.updateLegend(this.legendText);
+
+    }
+
 
 
     legend({
@@ -306,7 +363,7 @@ class ChoroPlot {
         color,
         title,
         tickSize = 6,
-        width = 320,
+        width = 250,
         height = 44 + tickSize,
         marginTop = 18,
         marginRight = 0,
@@ -456,22 +513,30 @@ class ChoroPlot {
 
 whenDocumentLoaded(() => {
 
-    var geoJsonPath =
+    var geoJsonPathRomandie =
         'https://raw.githubusercontent.com/arnauddhaene/airbnb-visualized/main/data/neighbourhoods-combined.geojson';
+
+    var geoJsonPathZurich =
+        'https://raw.githubusercontent.com/arnauddhaene/airbnb-visualized/main/data/zurich/neighbourhoods.geojson';
 
     var infoPath =
         'https://raw.githubusercontent.com/arnauddhaene/airbnb-visualized/main/data/listings-filtered.csv';
 
-    var geojson = d3.json(geoJsonPath);
+    var geojsonRomandie = d3.json(geoJsonPathRomandie);
+    var geojsonZurich = d3.json(geoJsonPathZurich);
     var data = d3.csv(infoPath);
 
-    Promise.all([geojson, data]).then(response => {
+    Promise.all([geojsonRomandie, geojsonZurich, data]).then(response => {
 
-        var geojson = response[0];
-        var listings = response[1].filter(l => l['price'] < 500);
+        const geojsonRomandie = response[0];
+        const geojsonZurich = response[1];
 
-        var features = {
-            'price': 'Price ($)',
+        const geojson = { 'romandie': geojsonRomandie, 'zurich': geojsonZurich };
+
+        const listings = response[2].filter(l => l['price'] < 500);
+
+        const features = {
+            'price': 'Price ($/night)',
             'review_scores_value': 'Average Review Score / 10',
             'beds': 'Beds',
             'accommodates': 'Accomodation (persons)',
@@ -482,14 +547,27 @@ whenDocumentLoaded(() => {
             'bedrooms': 'Bedrooms'
         };
 
-        const chart1 = new ChoroPlot('plot1', 'legend1', geojson, listings, features, 'price');
-        const chart2 = new ChoroPlot('plot2', 'legend2', geojson, listings, features, 'bedrooms');
+        const format = { 
+            'zurich': {
+                'scale': 90000,
+            },
+            'romandie': {
+                'scale': 12000,
+            }, 
+        }
+
+        const feature1 = { 'value': 'price', 'text': 'Price ($/night)'};
+        const feature2 = { 'value': 'bedrooms', 'text': 'Bedrooms'};
+
+        const chart1 = new ChoroPlot('plot1', 'legend1', geojson, format, listings, features, feature1);
+        const chart2 = new ChoroPlot('plot2', 'legend2', geojson, format, listings, features, feature2);
 
         chart1.show();
         chart2.show();
 
         var button1Id = 'selectFeatureButton1',
-            button2Id = 'selectFeatureButton2';
+            button2Id = 'selectFeatureButton2',
+            locationButtonId = 'selectLocationButton';
 
         const scatter = new ScatterPlot('plot3', listings, 'price', 'bedrooms',
             'selectFeatureButton1', 'selectFeatureButton2')
@@ -499,10 +577,37 @@ whenDocumentLoaded(() => {
         initSelector(`#${button1Id}`, features, chart1, scatter);
         initSelector(`#${button2Id}`, features, chart2, scatter, reverse = true);
 
+        initLocationSelector(`#${locationButtonId}`, chart1, chart2, scatter)
+
     }).catch(error => console.log(error));
 
 
 });
+
+function initLocationSelector(id, chart1, chart2, scatter) {
+
+    // Options
+    const features = { 'romandie': 'French Switzerland', 'zurich': 'Zurich' }
+
+    // add the options to the button
+    d3.select(id)
+        .selectAll('locationOptions')
+        .data(Object.keys(features))
+        .enter()
+        .append('option')
+        .text(d => features[d]) // text showed in the menu
+        .attr("value", d => d) // corresponding value returned by the button
+
+    // When the button is changed, run the updateChart function
+    d3.select(id).on("change", function(d) {
+        // recover the option that has been chosen
+        var selectedOption = d3.select(this).property("value")
+            // run the updateChart function with this selected option
+        chart1.updateLocation(selectedOption);
+        chart2.updateLocation(selectedOption);
+        scatter.updateLocation(selectedOption);
+    });
+}
 
 
 function initSelector(id, features, chart, scatter, reverse = false) {
