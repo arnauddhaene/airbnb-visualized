@@ -1,7 +1,7 @@
 // *******************//
 // whenDocumentLoaded //
 // *******************//
-function whenDocumentLoaded_(action) {
+function whenDocumentLoaded__(action) {
     if (document.readyState === "loading") {
         document.addEventListener("DOMContentLoaded", action);
     } else {
@@ -15,7 +15,7 @@ function whenDocumentLoaded_(action) {
 // *******************//
 
 class SankeyPlot{
-  constructor(id, amenities, button1Id, width = 500, height = 450){
+  constructor(id, amenities, button1Id, width = 1000, height = 450){
 
     this.button1Id = button1Id;
 
@@ -24,6 +24,9 @@ class SankeyPlot{
     this.margin = {top: 10, right: 10, bottom: 10, left: 10};
     this.width = width - this.margin.left - this.margin.right;
     this.height = height - this.margin.top - this.margin.bottom;
+
+    //var formatNumber = d3.format(",.0f") // zero decimal places
+    //    this.format = function(d) { return formatNumber(d); }
 
     this.svg = d3.select("#" + id)
         .attr("width", this.width + this.margin.left + this.margin.right)
@@ -34,8 +37,8 @@ class SankeyPlot{
 
     // Set the sankey diagram properties
     this.sankey = d3.sankey()
-        .nodeWidth(10)
-        .nodePadding(14)
+        .nodeWidth(5)
+        .nodePadding(5)
         .nodeAlign(d3.sankeyCenter)
         .size([this.width, this.height]);
 
@@ -49,7 +52,6 @@ class SankeyPlot{
 
 show() {}
 
-makeSankey() {}
 
 fillSankeyData() {
 
@@ -93,8 +95,56 @@ makeNodesObject(){
 
 makeGraph(){
 
-  graph = this.sankey(this.sankeydata);
+  var color = d3.scaleOrdinal(d3.schemeCategory10);
 
+  var formatNumber = d3.format(",.0f"), // zero decimal places
+      format = function(d) { return formatNumber(d); };
+
+  var graph = this.sankey(this.sankeydata);
+
+  // add in the links
+  var link = this.svg.append("g").selectAll(".link")
+      .data(graph.links)
+    .enter().append("path")
+      .attr("class", "link")
+      .attr("d", d3.sankeyLinkHorizontal())
+      .attr("stroke-width", function(d) { return d.width; });
+
+  // add the link titles
+  link.append("title")
+          .text(function(d) {
+        		   return d.source.name + " → " +
+                  d.target.name + "\n" + format(d.value); });
+// add in the nodes
+  var node = this.svg.append("g").selectAll(".node")
+      .data(graph.nodes)
+    .enter().append("g")
+      .attr("class", "node");
+
+// add the rectangles for the nodes
+      node.append("rect")
+            .attr("x", function(d) { return d.x0; })
+            .attr("y", function(d) { return d.y0; })
+            .attr("height", function(d) { return d.y1 - d.y0; })
+            .attr("width", this.sankey.nodeWidth())
+            .style("fill", function(d) {
+      		      return d.color = color(d.name.replace(/ .*/, "")); })
+            .style("stroke", function(d) {
+      		  return d3.rgb(d.color).darker(2); })
+      	  .append("title")
+            .text(function(d) {
+      		  return d.name + "\n" + format(d.value); });
+
+  // add in the title for the nodes
+      node.append("text")
+                  .attr("x", function(d) { return d.x0 - 6; })
+                  .attr("y", function(d) { return (d.y1 + d.y0) / 2; })
+                  .attr("dy", "0.35em")
+                  .attr("text-anchor", "end")
+                  .text(function(d) { return d.name; })
+                .filter(function(d) { return d.x0 < this.width / 2; })
+                  .attr("x", function(d) { return d.x1 + 6; })
+                  .attr("text-anchor", "start");
 
 }
 
@@ -103,9 +153,10 @@ makeGraph(){
 
 }
 
-whenDocumentLoaded(() => {
+whenDocumentLoaded__(() => {
 
-    var infoPath = 'https://raw.githubusercontent.com/arnauddhaene/airbnb-visualized/charlyne/data/vd_total.csv'; //to replace by github raw
+    var infoPath_vd = 'https://raw.githubusercontent.com/arnauddhaene/airbnb-visualized/charlyne/data/vd_total.csv';
+    var infoPath_gv = 'https://raw.githubusercontent.com/arnauddhaene/airbnb-visualized/charlyne/data/gv_total.csv';
 
     var data = d3.csv(infoPath);
 
@@ -116,20 +167,18 @@ whenDocumentLoaded(() => {
         chart = new SankeyPlot('plot5', links, 'selectPlaceButton5');
 
         chart.fillSankeyData()
-        console.log('length of sankeydata: '+chart.sankeydata.nodes.length)
         chart.makeUniqueNodes()
 
 
-        console.log('length of sankeydata: '+chart.sankeydata.nodes.length)
 
         chart.replaceLinkText()
         chart.makeNodesObject()
-        console.log(this.sankey)
+        //console.log(this.sankey.nodes())
         chart.makeGraph()
 
         //chart.show();
 
-        var button1Id = 'selectPlaceButton5';
+        var button10Id = 'selectPlaceButton5';
 
         var places = {
             'Vaud': 'Vaud',
@@ -137,7 +186,7 @@ whenDocumentLoaded(() => {
             'Zurich':'Zurich'
         };
 
-        //initSelector(`#${button1Id}`, features, chart1, scatter);
+        initSelector(`#${button10Id}`, features, chart1, scatter);
         //initSelector(`#${button2Id}`, features, chart2, scatter, reverse = true);
 
     }).catch(error => console.log(error));
