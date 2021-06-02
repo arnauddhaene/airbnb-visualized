@@ -43,7 +43,6 @@ class SankeyPlot{
 
     this.sankeydata = {"nodes" : [], "links" : []}; //data for sankey format
 
-    console.log('i get here')
 
 
 }
@@ -54,19 +53,53 @@ makeSankey() {}
 
 fillSankeyData() {
 
-  this.amenities.forEach(function (d) {
-    console.log(d.source)
+  this.amenities.forEach(d => {
+    //console.log(d)
     this.sankeydata.nodes.push({ "name": d.source });
     this.sankeydata.nodes.push({ "name": d.target });
     this.sankeydata.links.push({ "source": d.source,
                        "target": d.target,
                        "value": +d.value });
    });
+}
 
-   console.log(this.sankeydata.length)
+makeUniqueNodes() {
+
+  this.sankeydata.nodes = Array.from(
+     d3.group(this.sankeydata.nodes, d => d.name),
+   ([value]) => (value)
+   )
+}
+
+// loop through each link replacing the text with its index from node
+replaceLinkText() {
+  this.sankeydata.links.forEach( (d, i)=> {
+    this.sankeydata.links[i].source = this.sankeydata.nodes
+      .indexOf(this.sankeydata.links[i].source);
+    this.sankeydata.links[i].target = this.sankeydata.nodes
+      .indexOf(this.sankeydata.links[i].target);
+  });
+}
+
+// now loop through each nodes to make nodes an array of objects
+// rather than an array of strings
+makeNodesObject(){
+
+  this.sankeydata.nodes.forEach((d, i)=> {
+    this.sankeydata.nodes[i] = { "name": d };
+  });
+
+}
+
+makeGraph(){
+
+  graph = this.sankey(this.sankeydata);
 
 
 }
+
+
+
 
 }
 
@@ -83,6 +116,16 @@ whenDocumentLoaded(() => {
         chart = new SankeyPlot('plot5', links, 'selectPlaceButton5');
 
         chart.fillSankeyData()
+        console.log('length of sankeydata: '+chart.sankeydata.nodes.length)
+        chart.makeUniqueNodes()
+
+
+        console.log('length of sankeydata: '+chart.sankeydata.nodes.length)
+
+        chart.replaceLinkText()
+        chart.makeNodesObject()
+        console.log(this.sankey)
+        chart.makeGraph()
 
         //chart.show();
 
