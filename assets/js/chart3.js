@@ -15,7 +15,7 @@ function whenDocumentLoaded__(action) {
 // *******************//
 
 class SankeyPlot{
-  constructor(id, amenities1, amenities2, amenities3, a12,a22,a32, button1Id, width = 1000, height = 550, place="Vaud"){
+  constructor(id, amenities1, amenities2, amenities3, button1Id, width = 1000, height = 550, place="Vaud"){
 
     this.id = id;
 
@@ -30,15 +30,6 @@ class SankeyPlot{
         case 'Geneva':
             this.amenities = amenities2;
             break;
-        case 'Vaud Special':
-            this.amenities = a12;
-            break;
-        case 'Zurich Special':
-            this.amenities = a32;
-            break;
-        case 'Geneva Special':
-            this.amenities = a22;
-            break;
         default:
             break;
     }
@@ -47,9 +38,6 @@ class SankeyPlot{
     this.vd_links = amenities1;
     this.gv_links = amenities2;
     this.zh_links = amenities3;
-    this.vd_links_s = a12;
-    this.gv_links_s = a22;
-    this.zh_links_s = a32;
 
     this.button1Id = button1Id;
 
@@ -64,7 +52,7 @@ class SankeyPlot{
     this.svg = d3.select("#" + id)
         .attr("width", this.width + this.margin.left + this.margin.right)
         .attr("height", this.height + this.margin.top + this.margin.bottom)
-        .attr("font-size", 10)
+        .attr("font-size", '1em')
         .append("g")
         .attr("transform",
             "translate(" + this.margin.left + "," + this.margin.top + ")");
@@ -140,8 +128,7 @@ makeGraph(){
       .data(graph.links)
     .enter().append("path")
       .attr("class", "link")
-      .attr("stroke", d => color(d.source))
-      .attr("fill", d => color(d.source))
+      .attr("stroke", function(d) {return color(d.source)})
       .attr("d", d3.sankeyLinkHorizontal())
       .attr("stroke-width", function(d) { return d.width; });
 
@@ -205,15 +192,6 @@ update_place_(place){
       case 'Geneva':
           this.amenities = this.gv_links;
           break;
-      case 'Vaud Special':
-          this.amenities = this.vd_links_s;
-          break;
-      case 'Zurich Special':
-          this.amenities = this.gv_links_s;
-          break;
-      case 'Geneva Special':
-          this.amenities = this.zh_links_s;
-          break;
       default:
           break;
 
@@ -231,32 +209,30 @@ update_place_(place){
 
 whenDocumentLoaded__(() => {
 
+    //var infoPath_vd = 'https://raw.githubusercontent.com/arnauddhaene/airbnb-visualized/charlyne/data/vd_total.csv';
+    //var infoPath_gv = 'https://raw.githubusercontent.com/arnauddhaene/airbnb-visualized/charlyne/data/gv_total.csv';
+    //var infoPath_zh = 'https://raw.githubusercontent.com/arnauddhaene/airbnb-visualized/charlyne/data/zh_total.csv';
     var infoPath_vd = 'https://raw.githubusercontent.com/arnauddhaene/airbnb-visualized/charlyne/data/vd_total.csv';
     var infoPath_gv = 'https://raw.githubusercontent.com/arnauddhaene/airbnb-visualized/charlyne/data/gv_total.csv';
     var infoPath_zh = 'https://raw.githubusercontent.com/arnauddhaene/airbnb-visualized/charlyne/data/zh_total.csv';
-    var infoPath_vd_s = 'https://raw.githubusercontent.com/arnauddhaene/airbnb-visualized/charlyne/data/vd_total_s.csv';
-    var infoPath_gv_s = 'https://raw.githubusercontent.com/arnauddhaene/airbnb-visualized/charlyne/data/gv_total_s.csv';
-    var infoPath_zh_s = 'https://raw.githubusercontent.com/arnauddhaene/airbnb-visualized/charlyne/data/zh_total_s.csv';
 
 
     var data1 = d3.csv(infoPath_vd);
     var data2 = d3.csv(infoPath_gv);
     var data3 = d3.csv(infoPath_zh);
 
-    var data12 = d3.csv(infoPath_vd_s);
-    var data22 = d3.csv(infoPath_gv_s);
-    var data32 = d3.csv(infoPath_zh_s);
+    //var data12 = d3.csv(infoPath_vd_s);
+    //var data22 = d3.csv(infoPath_gv_s);
+    //var data32 = d3.csv(infoPath_zh_s);
 
-    Promise.all([data1, data2,data3,data12,data22,data32]).then(response => {
+    Promise.all([data1, data2,data3]).then(response => {
 
         var links_vd = response[0];
         var links_gv = response[1];
         var links_zh = response[2];
-        var links_vd_s = response[3];
-        var links_gv_s = response[4];
-        var links_zh_s = response[5];
 
-        chart = new SankeyPlot('plot5', links_vd,links_gv, links_zh, links_vd_s, links_gv_s,links_zh_s, 'selectPlaceButton5');
+
+        chart = new SankeyPlot('plot5', links_vd,links_gv, links_zh, 'selectPlaceButton5');
 
 
         chart.show();
@@ -266,10 +242,7 @@ whenDocumentLoaded__(() => {
         var places = {
             'Vaud': 'Vaud',
             'Geneva':'Geneva',
-            'Zurich':'Zurich',
-            'Vaud Special':'Vaud Special',
-            'Geneva Special':'Geneva Special',
-            'Zurich Special': 'Zurich Special'
+            'Zurich':'Zurich'
         };
 
         initSelectorPlace__(`#${button10Id}`, places, chart);
