@@ -10,19 +10,14 @@ The data is pulled from [Inside Airbnb](http://insideairbnb.com/get-the-data.htm
 
 ```
 
-├── config
-|   └── index.js   
 ├── data
 |   ├── README.md          <- More info about data filenames
 |   ├── geneva             <- Geneva region data
 |   ├── vaud               <- Vaud region data
 |   └── zurich             <- Zurich region data
 ├── notebooks              <- Python notebooks
-|   └── eda.ipnyb
-├── scripts
+|   └── filter.ipynb
 ├── .gitignore
-├── index.js
-├── package.json
 ├── README.md              <- The current file
 ```
 
