@@ -1280,3 +1280,7 @@ path {
     overflow: hidden;
     display: inline-block;
 }
+
+.regression {
+    stroke: black;
+}

@@ -72,6 +72,11 @@ class ScatterPlot {
         var minToMaxX = [d3.min(tempListings, l => +l[this.featureX]), d3.max(tempListings, l => +l[this.featureX])]
         var minToMaxY = [d3.min(tempListings, l => +l[this.featureY]), d3.max(tempListings, l => +l[this.featureY])]
 
+        this.regression = d3.regressionLinear()
+            .x(l => +l[this.featureX])
+            .y(l => +l[this.featureY])
+            .domain(minToMaxX);
+
         // Add X axis
         this.x = d3.scaleLinear()
             .domain(minToMaxX)
@@ -121,7 +126,25 @@ class ScatterPlot {
             .attr("cx", d => this.x(d[featureX]))
             .attr("cy", d => this.y(d[featureY]))
             .attr("r", 1.5)
-            .style("fill", "#69b3a2")
+            .style("fill", "#162b5d");
+
+        this.svg.select('#chart')
+            .append('line')
+            .attr('class', 'regression')
+            .datum(this.regression(this.listings))
+            .attr("x1", d => this.x(d[0][0]))
+            .attr("x2", d => this.x(d[1][0]))
+            .attr("y1", d => this.y(d[0][1]))
+            .attr("y2", d => this.y(d[1][1]));
+
+        this.svg.select('#chart')
+            .append('text')
+            .attr('id', 'rSquaredText')
+            .attr('x', this.width - this.margin.left)
+            .attr('y', this.margin.top)
+            .attr('dy', '1em')
+            .style('text-anchor', 'middle')
+            .text(`R-squared: ${this.regression(this.listings).rSquared.toFixed(3)}`)
     }
 
     update() {
@@ -166,9 +189,10 @@ class ScatterPlot {
 // *******************//
 class ChoroPlot {
 
-    constructor(id, legendId, geojson, format, listings, features, feature, width = 300, height = 400) {
+    constructor(id, otherId, legendId, geojson, format, listings, features, feature, width = 300, height = 400) {
 
-        this.id = id
+        this.id = id;
+        this.otherId = otherId;
 
         this.geojson = geojson;
         this.format = format;
@@ -198,10 +222,13 @@ class ChoroPlot {
         var tempListings = this.listings.filter(l => (l[this.feature] != NaN) && (l[this.feature] != 0.0));
 
         this.minToMax = [d3.min(tempListings, l => +l[this.feature]), d3.max(tempListings, l => +l[this.feature])]
+        
+        
+        const colorGradient = (this.id == 'plot1') ? ["lightgreen", "blue"] : ["yellow", "purple"];
 
         this.colorScale = d3.scaleLinear()
             .domain(this.minToMax)
-            .range(["lightgreen", "blue"]);
+            .range(colorGradient);
 
         this.lookup = new Map(this.listings.map(d => [d.neighbourhood, d[this.feature]]));
     }
@@ -267,7 +294,7 @@ class ChoroPlot {
 
         this.fill()
 
-        var tooltip = this.svg.append('g')
+        var tooltip = this.svg.append('g');
 
         let handleMouseOver = (event, d) => {
 
@@ -285,7 +312,16 @@ class ChoroPlot {
                 .transition()
                 .duration(200)
                 .style("opacity", 1)
-                .style("stroke", "red")
+                .style("stroke", "red");
+
+            d3.select(`#${this.otherId}`)
+                .select('#map')
+                .selectAll('.neighbourhood')
+                .filter(p => p.properties.neighbourhood == d.properties.neighbourhood)
+                .transition()
+                .duration(200)
+                .style("opacity", 1)
+                .style("stroke", "red");
         }
 
         let handleMouseLeave = (_, d) => {
@@ -293,6 +329,15 @@ class ChoroPlot {
             tooltip.call(this.callout, null);
 
             this.svg.select('#map')
+                .selectAll('.neighbourhood')
+                .filter(p => p.properties.neighbourhood == d.properties.neighbourhood)
+                .transition()
+                .duration(200)
+                .style("opacity", 0.8)
+                .style("stroke", "rgb(101, 99, 99)");
+
+            d3.select(`#${this.otherId}`)
+                .select('#map')
                 .selectAll('.neighbourhood')
                 .filter(p => p.properties.neighbourhood == d.properties.neighbourhood)
                 .transition()
@@ -559,8 +604,8 @@ whenDocumentLoaded(() => {
         const feature1 = { 'value': 'price', 'text': 'Price ($/night)'};
         const feature2 = { 'value': 'bedrooms', 'text': 'Bedrooms'};
 
-        const chart1 = new ChoroPlot('plot1', 'legend1', geojson, format, listings, features, feature1);
-        const chart2 = new ChoroPlot('plot2', 'legend2', geojson, format, listings, features, feature2);
+        const chart1 = new ChoroPlot('plot1', 'plot2', 'legend1', geojson, format, listings, features, feature1);
+        const chart2 = new ChoroPlot('plot2', 'plot1', 'legend2', geojson, format, listings, features, feature2);
 
         chart1.show();
         chart2.show();
