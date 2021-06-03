@@ -115,3 +115,4 @@ data/geneva/*
 .DS_Store
 
 .vscode/
+.metals/
