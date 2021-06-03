@@ -592,7 +592,6 @@
                     <p>The Swiss listings landscape on Airbnb is very diverse. However, some amenities remain very
                         similar across all rented properties.</p>
                 </div>
-
                 <div class="row skills-content">
 
                     <div class="col-lg-6">
@@ -683,16 +682,44 @@
 
                 <div class="section-title">
                     <h2>Insights for hosts</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                        sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                        ea. Quia fugiat sit in iste officiis commodi
-                        quidem hic quas.</p>
+                    <p> Are you renting out your full house or a room ? Make sure to check out whether your listing matches
+                      the amenities provided in the other listings in your price range. Check out also the specialized
+                    selection of your area to see more interesting amenities ! </p>
                 </div>
 
-                <div id="host-plot"
-                     class="container"></div>
+                <div class="container">
 
-            </div>
+                  <div class="container d-flex flex-row mt-3">
+
+
+                    <div class="col">
+                      <select id="selectPlaceButton5">
+                    </select>
+                    <div id="sankey_div">
+                      <div id="sankey_titles">
+                        <div id="whole place">
+                          <text>Whole Place</text>
+                        </div>
+                        <div id="amenities">
+                          <text>Amenities Available</text>
+                        </div>
+                        <div id="room">
+                          <text>Room</text>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+
+                  <svg id="plot5"  viewBox="0 0 800 650">
+
+                  </svg>
+
+
+
+
+
+                </div>
         </section>
         <!-- End Services Section -->
 
@@ -798,11 +825,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
     <script src="https://d3js.org/d3-queue.v3.min.js"></script>
     <script src="https://d3js.org/topojson.v1.min.js"></script>
+    <script src="https://unpkg.com/d3-sankey@0.12.3/dist/d3-sankey.min.js"></script>
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/chart1.js"></script>
+	<script src="assets/js/chart1.js"></script>
     <script src="assets/js/chart2.js"></script>
+  <script src="assets/js/chart3.js"></script>
 
 </body>
 

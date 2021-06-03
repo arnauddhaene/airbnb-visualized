@@ -1,0 +1,364 @@
+source,target,value
+place:$0-100,Heating,0.9549393414211439
+place:$0-100,Essentials,0.9722703639514731
+place:$0-100,TV,0.6707105719237435
+place:$0-100,Stove,0.464471403812825
+place:$0-100,Smoke alarm,0.22530329289428075
+place:$0-100,Lockbox,0.11611785095320624
+place:$0-100,Dryer,0.35181975736568455
+place:$0-100,Oven,0.44714038128249567
+place:$0-100,Coffee maker,0.42634315424610053
+place:$0-100,Shampoo,0.5788561525129983
+place:$0-100,Hangers,0.8422876949740035
+place:$0-100,First aid kit,0.15077989601386482
+place:$0-100,Hair dryer,0.708838821490468
+place:$0-100,Dishes and silverware,0.5788561525129983
+place:$0-100,Kitchen,0.9722703639514731
+place:$0-100,Dishwasher,0.14558058925476602
+place:$0-100,Cooking basics,0.5736568457538995
+place:$0-100,Microwave,0.3466204506065858
+place:$0-100,Patio or balcony,0.1923743500866551
+place:$0-100,Dedicated workspace,0.6776429809358753
+place:$0-100,Wifi,0.902946273830156
+place:$0-100,Free parking on premises,0.1369150779896014
+place:$0-100,Pocket wifi,0.10918544194107452
+place:$0-100,Shower gel,0.16984402079722705
+place:$0-100,Private entrance,0.28422876949740034
+place:$0-100,Extra pillows and blankets,0.24956672443674177
+place:$0-100,Luggage dropoff allowed,0.16464471403812825
+place:$0-100,Refrigerator,0.5632582322357019
+place:$0-100,Carbon monoxide alarm,0.13518197573656845
+place:$0-100,Long term stays allowed,0.8752166377816292
+place:$0-100,Hot water,0.7677642980935875
+place:$0-100,Bed linens,0.43500866551126516
+place:$0-100,Bathtub,0.10745233968804159
+place:$0-100,Iron,0.7920277296360485
+place:$0-100,Free street parking,0.19584055459272098
+place:$0-100,Fire extinguisher,0.16464471403812825
+place:$0-100,Washer,0.5927209705372617
+place:$100-200,Heating,0.976068376068376
+place:$100-200,Essentials,0.9709401709401709
+place:$100-200,TV,0.8256410256410256
+place:$100-200,Stove,0.4598290598290598
+place:$100-200,Smoke alarm,0.2512820512820513
+place:$100-200,Lockbox,0.1452991452991453
+place:$100-200,Dryer,0.5264957264957265
+place:$100-200,Oven,0.4564102564102564
+place:$100-200,Coffee maker,0.452991452991453
+place:$100-200,Shampoo,0.5538461538461539
+place:$100-200,Hangers,0.882051282051282
+place:$100-200,First aid kit,0.14017094017094017
+place:$100-200,Hair dryer,0.7094017094017094
+place:$100-200,Dishes and silverware,0.5504273504273505
+place:$100-200,Kitchen,0.9846153846153847
+place:$100-200,Dishwasher,0.2923076923076923
+place:$100-200,Cooking basics,0.6512820512820513
+place:$100-200,Microwave,0.3487179487179487
+place:$100-200,Patio or balcony,0.20170940170940171
+place:$100-200,Dedicated workspace,0.7555555555555555
+place:$100-200,Wifi,0.9709401709401709
+place:$100-200,Free parking on premises,0.1829059829059829
+place:$100-200,Shower gel,0.1094017094017094
+place:$100-200,Private entrance,0.30085470085470084
+place:$100-200,Extra pillows and blankets,0.26495726495726496
+place:$100-200,Luggage dropoff allowed,0.19145299145299147
+place:$100-200,Refrigerator,0.5042735042735043
+place:$100-200,Carbon monoxide alarm,0.12307692307692308
+place:$100-200,Long term stays allowed,0.8717948717948718
+place:$100-200,Hot water,0.7572649572649572
+place:$100-200,Bed linens,0.4
+place:$100-200,Bathtub,0.13846153846153847
+place:$100-200,Iron,0.8752136752136752
+place:$100-200,Free street parking,0.1606837606837607
+place:$100-200,Fire extinguisher,0.15213675213675212
+place:$100-200,Washer,0.8273504273504273
+place:$200-300,Heating,0.9591836734693877
+place:$200-300,Essentials,0.9795918367346939
+place:$200-300,TV,0.8877551020408163
+place:$200-300,Stove,0.5102040816326531
+place:$200-300,Smoke alarm,0.336734693877551
+place:$200-300,Pack ’n Play/travel crib,0.11224489795918367
+place:$200-300,Room-darkening shades,0.12244897959183673
+place:$200-300,Garden or backyard,0.14285714285714285
+place:$200-300,Lockbox,0.12244897959183673
+place:$200-300,Dryer,0.5918367346938775
+place:$200-300,Oven,0.5102040816326531
+place:$200-300,Coffee maker,0.5102040816326531
+place:$200-300,Shampoo,0.7040816326530612
+place:$200-300,Hangers,0.8775510204081632
+place:$200-300,First aid kit,0.24489795918367346
+place:$200-300,Hair dryer,0.8163265306122449
+place:$200-300,Dishes and silverware,0.5816326530612245
+place:$200-300,Kitchen,0.9795918367346939
+place:$200-300,Dishwasher,0.4387755102040816
+place:$200-300,Cooking basics,0.6020408163265306
+place:$200-300,Microwave,0.40816326530612246
+place:$200-300,High chair,0.14285714285714285
+place:$200-300,Patio or balcony,0.3469387755102041
+place:$200-300,Dedicated workspace,0.7551020408163265
+place:$200-300,Wifi,0.9795918367346939
+place:$200-300,Free parking on premises,0.40816326530612246
+place:$200-300,Pocket wifi,0.11224489795918367
+place:$200-300,Shower gel,0.19387755102040816
+place:$200-300,Crib,0.14285714285714285
+place:$200-300,Private entrance,0.3877551020408163
+place:$200-300,Extra pillows and blankets,0.3469387755102041
+place:$200-300,Luggage dropoff allowed,0.29591836734693877
+place:$200-300,Refrigerator,0.5714285714285714
+place:$200-300,Carbon monoxide alarm,0.19387755102040816
+place:$200-300,Long term stays allowed,0.8775510204081632
+place:$200-300,Hot water,0.7857142857142857
+place:$200-300,Bed linens,0.5
+place:$200-300,Bathtub,0.24489795918367346
+place:$200-300,Iron,0.8163265306122449
+place:$200-300,Children’s books and toys,0.10204081632653061
+place:$200-300,Free street parking,0.21428571428571427
+place:$200-300,Fire extinguisher,0.23469387755102042
+place:$200-300,Washer,0.7653061224489796
+place:$300-400,Heating,0.9117647058823529
+place:$300-400,Essentials,0.8823529411764706
+place:$300-400,TV,0.9117647058823529
+place:$300-400,Stove,0.4117647058823529
+place:$300-400,Smoke alarm,0.38235294117647056
+place:$300-400,Garden or backyard,0.11764705882352941
+place:$300-400,Babysitter recommendations,0.11764705882352941
+place:$300-400,Dryer,0.5588235294117647
+place:$300-400,Oven,0.5588235294117647
+place:$300-400,Coffee maker,0.47058823529411764
+place:$300-400,Shampoo,0.8529411764705882
+place:$300-400,Hangers,0.8823529411764706
+place:$300-400,First aid kit,0.2647058823529412
+place:$300-400,Hair dryer,0.8235294117647058
+place:$300-400,Dishes and silverware,0.47058823529411764
+place:$300-400,Kitchen,1.0
+place:$300-400,Dishwasher,0.4117647058823529
+place:$300-400,Cooking basics,0.5294117647058824
+place:$300-400,Microwave,0.3235294117647059
+place:$300-400,High chair,0.11764705882352941
+place:$300-400,Patio or balcony,0.17647058823529413
+place:$300-400,Dedicated workspace,0.7941176470588235
+place:$300-400,Wifi,1.0
+place:$300-400,Free parking on premises,0.3235294117647059
+place:$300-400,Shower gel,0.11764705882352941
+place:$300-400,Crib,0.23529411764705882
+place:$300-400,Private entrance,0.23529411764705882
+place:$300-400,Extra pillows and blankets,0.2647058823529412
+place:$300-400,Luggage dropoff allowed,0.2647058823529412
+place:$300-400,Refrigerator,0.6176470588235294
+place:$300-400,Carbon monoxide alarm,0.14705882352941177
+place:$300-400,Long term stays allowed,0.8823529411764706
+place:$300-400,Hot water,0.6470588235294118
+place:$300-400,Bed linens,0.4117647058823529
+place:$300-400,Bathtub,0.23529411764705882
+place:$300-400,Iron,0.9117647058823529
+place:$300-400,Free street parking,0.14705882352941177
+place:$300-400,Fire extinguisher,0.2647058823529412
+place:$300-400,Washer,0.7352941176470589
+place:$300-400,Hot tub,0.14705882352941177
+place:$400-500,Heating,1.0
+place:$400-500,Essentials,1.0
+place:$400-500,TV,1.0
+place:$400-500,Stove,0.4375
+place:$400-500,Nespresso machine,0.1875
+place:$400-500,Ethernet connection,0.1875
+place:$400-500,Smoke alarm,0.4375
+place:$400-500,Clothing storage,0.1875
+place:$400-500,Room-darkening shades,0.125
+place:$400-500,Barbecue utensils,0.125
+place:$400-500,Lockbox,0.1875
+place:$400-500,Wine glasses,0.1875
+place:$400-500,Dryer,0.6875
+place:$400-500,Oven,0.4375
+place:$400-500,Coffee maker,0.375
+place:$400-500,Shampoo,0.6875
+place:$400-500,Hangers,0.9375
+place:$400-500,First aid kit,0.25
+place:$400-500,Hair dryer,0.6875
+place:$400-500,Dishes and silverware,0.5625
+place:$400-500,Kitchen,1.0
+place:$400-500,Hot water kettle,0.1875
+place:$400-500,Dishwasher,0.3125
+place:$400-500,Cooking basics,0.375
+place:$400-500,Microwave,0.4375
+place:$400-500,High chair,0.125
+place:$400-500,Patio or balcony,0.25
+place:$400-500,Dedicated workspace,0.6875
+place:$400-500,Wifi,1.0
+place:$400-500,Toaster,0.125
+place:$400-500,Free parking on premises,0.5
+place:$400-500,Pocket wifi,0.125
+place:$400-500,Shower gel,0.1875
+place:$400-500,Drying rack for clothing,0.125
+place:$400-500,Crib,0.125
+place:$400-500,Private entrance,0.4375
+place:$400-500,Extra pillows and blankets,0.3125
+place:$400-500,Refrigerator,0.5
+place:$400-500,Carbon monoxide alarm,0.375
+place:$400-500,Long term stays allowed,0.8125
+place:$400-500,Hot water,0.625
+place:$400-500,Bed linens,0.375
+place:$400-500,Bathtub,0.25
+place:$400-500,Body soap,0.125
+place:$400-500,Iron,1.0
+place:$400-500,Children’s books and toys,0.125
+place:$400-500,Freezer,0.1875
+place:$400-500,Dining table,0.1875
+place:$400-500,Free street parking,0.125
+place:$400-500,Fire extinguisher,0.1875
+place:$400-500,Washer,0.75
+Heating,room:$0-100,0.9313725490196079
+Essentials,room:$0-100,0.934640522875817
+TV,room:$0-100,0.5196078431372549
+Stove,room:$0-100,0.3235294117647059
+Smoke alarm,room:$0-100,0.24836601307189543
+Dryer,room:$0-100,0.4493464052287582
+Oven,room:$0-100,0.32516339869281047
+Coffee maker,room:$0-100,0.31862745098039214
+Shampoo,room:$0-100,0.5915032679738562
+Hangers,room:$0-100,0.8055555555555556
+First aid kit,room:$0-100,0.3088235294117647
+Hair dryer,room:$0-100,0.7173202614379085
+Dishes and silverware,room:$0-100,0.39705882352941174
+Kitchen,room:$0-100,0.8055555555555556
+Dishwasher,room:$0-100,0.19444444444444445
+Cooking basics,room:$0-100,0.43790849673202614
+Microwave,room:$0-100,0.315359477124183
+Patio or balcony,room:$0-100,0.1895424836601307
+Dedicated workspace,room:$0-100,0.6601307189542484
+Wifi,room:$0-100,0.954248366013072
+Free parking on premises,room:$0-100,0.2222222222222222
+Extra pillows and blankets,room:$0-100,0.25
+Luggage dropoff allowed,room:$0-100,0.24183006535947713
+Refrigerator,room:$0-100,0.39705882352941174
+Carbon monoxide alarm,room:$0-100,0.16013071895424835
+Long term stays allowed,room:$0-100,0.8235294117647058
+Hot water,room:$0-100,0.6911764705882353
+Bed linens,room:$0-100,0.3284313725490196
+Bathtub,room:$0-100,0.11601307189542484
+Iron,room:$0-100,0.7859477124183006
+Free street parking,room:$0-100,0.1830065359477124
+Fire extinguisher,room:$0-100,0.24019607843137256
+Washer,room:$0-100,0.75
+Heating,room:$100-200,0.9882352941176471
+Essentials,room:$100-200,0.9882352941176471
+TV,room:$100-200,0.6823529411764706
+Stove,room:$100-200,0.29411764705882354
+Smoke alarm,room:$100-200,0.47058823529411764
+Dryer,room:$100-200,0.5058823529411764
+Oven,room:$100-200,0.18823529411764706
+Coffee maker,room:$100-200,0.25882352941176473
+Shampoo,room:$100-200,0.788235294117647
+Hangers,room:$100-200,0.8588235294117647
+First aid kit,room:$100-200,0.38823529411764707
+Hair dryer,room:$100-200,0.8352941176470589
+Dishes and silverware,room:$100-200,0.36470588235294116
+Kitchen,room:$100-200,0.7411764705882353
+Dishwasher,room:$100-200,0.12941176470588237
+Cooking basics,room:$100-200,0.21176470588235294
+Microwave,room:$100-200,0.16470588235294117
+Dedicated workspace,room:$100-200,0.7647058823529411
+Wifi,room:$100-200,0.9882352941176471
+Free parking on premises,room:$100-200,0.2
+Shower gel,room:$100-200,0.21176470588235294
+Extra pillows and blankets,room:$100-200,0.25882352941176473
+Luggage dropoff allowed,room:$100-200,0.2823529411764706
+Refrigerator,room:$100-200,0.35294117647058826
+Carbon monoxide alarm,room:$100-200,0.23529411764705882
+Long term stays allowed,room:$100-200,0.7764705882352941
+Hot water,room:$100-200,0.6823529411764706
+Bed linens,room:$100-200,0.36470588235294116
+Iron,room:$100-200,0.8235294117647058
+Free street parking,room:$100-200,0.17647058823529413
+Fire extinguisher,room:$100-200,0.49411764705882355
+Washer,room:$100-200,0.6352941176470588
+Heating,room:$200-300,0.9090909090909091
+Essentials,room:$200-300,1.0
+TV,room:$200-300,0.9090909090909091
+Smoke alarm,room:$200-300,0.8181818181818182
+Pack ’n Play/travel crib,room:$200-300,0.18181818181818182
+Coffee maker,room:$200-300,0.18181818181818182
+Shampoo,room:$200-300,0.6363636363636364
+Hangers,room:$200-300,0.8181818181818182
+First aid kit,room:$200-300,0.5454545454545454
+Hair dryer,room:$200-300,1.0
+Dishes and silverware,room:$200-300,0.18181818181818182
+Kitchen,room:$200-300,0.45454545454545453
+Microwave,room:$200-300,0.18181818181818182
+Dedicated workspace,room:$200-300,0.6363636363636364
+Wifi,room:$200-300,0.9090909090909091
+Free parking on premises,room:$200-300,0.18181818181818182
+Private entrance,room:$200-300,0.45454545454545453
+Refrigerator,room:$200-300,0.18181818181818182
+Long term stays allowed,room:$200-300,0.9090909090909091
+Hot water,room:$200-300,0.2727272727272727
+Iron,room:$200-300,0.36363636363636365
+Fire extinguisher,room:$200-300,0.6363636363636364
+Washer,room:$200-300,0.18181818181818182
+Heating,room:$300-400,0.5
+Conditioner,room:$300-400,0.5
+Essentials,room:$300-400,1.0
+TV,room:$300-400,0.5
+Stove,room:$300-400,0.5
+Mini fridge,room:$300-400,0.5
+Safe,room:$300-400,0.5
+Children’s dinnerware,room:$300-400,0.5
+Pour-over coffee,room:$300-400,0.5
+Pack ’n Play/travel crib,room:$300-400,0.5
+Clothing storage,room:$300-400,0.5
+Room-darkening shades,room:$300-400,0.5
+Dryer,room:$300-400,0.5
+Oven,room:$300-400,0.5
+Coffee maker,room:$300-400,0.5
+Shampoo,room:$300-400,1.0
+Hangers,room:$300-400,1.0
+First aid kit,room:$300-400,0.5
+Hair dryer,room:$300-400,1.0
+Dishes and silverware,room:$300-400,0.5
+Kitchen,room:$300-400,1.0
+Hot water kettle,room:$300-400,0.5
+Dishwasher,room:$300-400,0.5
+Cooking basics,room:$300-400,0.5
+Microwave,room:$300-400,0.5
+High chair,room:$300-400,0.5
+Patio or balcony,room:$300-400,0.5
+Changing table,room:$300-400,0.5
+Dedicated workspace,room:$300-400,1.0
+Wifi,room:$300-400,1.0
+Portable fans,room:$300-400,0.5
+Toaster,room:$300-400,0.5
+Free parking on premises,room:$300-400,0.5
+Shower gel,room:$300-400,0.5
+Drying rack for clothing,room:$300-400,0.5
+Private entrance,room:$300-400,0.5
+Extra pillows and blankets,room:$300-400,0.5
+Cleaning products,room:$300-400,0.5
+Luggage dropoff allowed,room:$300-400,0.5
+Refrigerator,room:$300-400,0.5
+Long term stays allowed,room:$300-400,0.5
+Hot water,room:$300-400,1.0
+Bed linens,room:$300-400,0.5
+Bathtub,room:$300-400,0.5
+Body soap,room:$300-400,0.5
+Iron,room:$300-400,0.5
+Freezer,room:$300-400,0.5
+Dining table,room:$300-400,0.5
+Free street parking,room:$300-400,0.5
+Fire extinguisher,room:$300-400,0.5
+Washer,room:$300-400,1.0
+Heating,room:$400-500,1.0
+Essentials,room:$400-500,1.0
+Dryer,room:$400-500,0.5
+Coffee maker,room:$400-500,0.5
+Shampoo,room:$400-500,1.0
+Hangers,room:$400-500,0.5
+First aid kit,room:$400-500,1.0
+Hair dryer,room:$400-500,0.5
+Kitchen,room:$400-500,1.0
+Wifi,room:$400-500,0.5
+Free parking on premises,room:$400-500,0.5
+Long term stays allowed,room:$400-500,1.0
+Hot water,room:$400-500,0.5
+Iron,room:$400-500,0.5
+Fire extinguisher,room:$400-500,0.5
+Washer,room:$400-500,1.0
+Hot tub,room:$400-500,0.5
