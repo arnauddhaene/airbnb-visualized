@@ -212,9 +212,9 @@ whenDocumentLoaded__(() => {
     //var infoPath_vd = 'https://raw.githubusercontent.com/arnauddhaene/airbnb-visualized/charlyne/data/vd_total.csv';
     //var infoPath_gv = 'https://raw.githubusercontent.com/arnauddhaene/airbnb-visualized/charlyne/data/gv_total.csv';
     //var infoPath_zh = 'https://raw.githubusercontent.com/arnauddhaene/airbnb-visualized/charlyne/data/zh_total.csv';
-    var infoPath_vd = 'https://raw.githubusercontent.com/arnauddhaene/airbnb-visualized/charlyne/data/vd_total.csv';
-    var infoPath_gv = 'https://raw.githubusercontent.com/arnauddhaene/airbnb-visualized/charlyne/data/gv_total.csv';
-    var infoPath_zh = 'https://raw.githubusercontent.com/arnauddhaene/airbnb-visualized/charlyne/data/zh_total.csv';
+    var infoPath_vd = 'https://raw.githubusercontent.com/arnauddhaene/airbnb-visualized/website/data/vd_total.csv';
+    var infoPath_gv = 'https://raw.githubusercontent.com/arnauddhaene/airbnb-visualized/website/data/gv_total.csv';
+    var infoPath_zh = 'https://raw.githubusercontent.com/arnauddhaene/airbnb-visualized/website/data/zh_total.csv';
 
 
     var data1 = d3.csv(infoPath_vd);
